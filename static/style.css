@@ -165,3 +165,26 @@ body {
 }
 .btn-equal:hover { background: #005a9e; }
 .btn-equal:active { background: #004b86; }
+
+/* Toast notification */
+#calc-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    white-space: nowrap;
+    z-index: 9999;
+}
+#calc-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
