@@ -3,35 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIC - Assignment Helper</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="/static/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>CIC</h1>
-            <button id="clear-btn" title="New chat">New Chat</button>
-        </header>
-        <div id="messages"></div>
-        <div id="input-area">
-            <div id="image-preview"></div>
-            <div id="input-row">
-                <label id="attach-btn" title="Attach image">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/>
-                    </svg>
-                    <input type="file" id="image-input" accept="image/*" hidden>
-                </label>
-                <textarea id="text-input" placeholder="Ask a question..." rows="1"></textarea>
-                <button id="send-btn" title="Send">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                    </svg>
-                </button>
+    <div class="calculator">
+        <!-- System Title Bar -->
+        <div class="title-bar">
+            <div class="title-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Windows_Calculator_icon.svg" width="16" height="16" alt="calc">
+                <span>Calculator</span>
+            </div>
+            <div class="title-right">
+                <div class="win-btn minimise">&#xE921;</div>
+                <div class="win-btn maximise">&#xE922;</div>
+                <div class="win-btn close">&#xE8BB;</div>
             </div>
         </div>
+
+        <!-- Mode Header -->
+        <div class="header">
+            <div class="header-left">
+                <span class="hamburger">&#9776;</span>
+                <h2>Standard</h2>
+                <span class="pip-icon">&#10697;</span>
+            </div>
+            <div class="header-right">
+                <span class="history-icon">&#8634;</span>
+            </div>
+        </div>
+
+        <!-- Display Area -->
+        <div class="display-container">
+            <div class="history-expr"></div>
+            <div id="display" class="main-display">0</div>
+        </div>
+
+        <!-- Memory Row -->
+        <div class="memory-row">
+            <button class="mem-btn disabled">MC</button>
+            <button class="mem-btn disabled">MR</button>
+            <button class="mem-btn">M+</button>
+            <button class="mem-btn">M-</button>
+            <button class="mem-btn">MS</button>
+            <button class="mem-btn disabled">M&#711;</button>
+        </div>
+
+        <!-- Keyboard Grid -->
+        <div class="keypad">
+            <!-- Row 1 -->
+            <button class="btn btn-top">%</button>
+            <button class="btn btn-top">CE</button>
+            <button class="btn btn-top" id="btn-clear">C</button>
+            <button class="btn btn-top">&#9003;</button>
+            
+            <!-- Row 2 -->
+            <button class="btn btn-top"><span><sup style="font-size:10px;">1</sup>&frasl;<sub><i style="font-size:12px;">x</i></sub></span></button>
+            <button class="btn btn-top"><i>x</i><sup>2</sup></button>
+            <button class="btn btn-top"><sup>2</sup>&radic;<i>x</i></button>
+            <button class="btn btn-top">&divide;</button>
+            
+            <!-- Row 3 -->
+            <button class="btn btn-num">7</button>
+            <button class="btn btn-num">8</button>
+            <button class="btn btn-num">9</button>
+            <button class="btn btn-top">&times;</button>
+            
+            <!-- Row 4 -->
+            <button class="btn btn-num">4</button>
+            <button class="btn btn-num">5</button>
+            <button class="btn btn-num">6</button>
+            <button class="btn btn-top">&minus;</button>
+            
+            <!-- Row 5 -->
+            <button class="btn btn-num">1</button>
+            <button class="btn btn-num">2</button>
+            <button class="btn btn-num">3</button>
+            <button class="btn btn-top">+</button>
+            
+            <!-- Row 6 -->
+            <button class="btn btn-num">+/-</button>
+            <button class="btn btn-num">0</button>
+            <button class="btn btn-num">.</button>
+            <button class="btn btn-equal" id="btn-equal">=</button>
+        </div>
     </div>
+    
     <script src="/static/app.js"></script>
 </body>
 </html>

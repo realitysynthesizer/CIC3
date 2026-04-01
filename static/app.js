@@ -1,169 +1,90 @@
-const messagesDiv = document.getElementById("messages");
-const textInput = document.getElementById("text-input");
-const sendBtn = document.getElementById("send-btn");
-const imageInput = document.getElementById("image-input");
-const imagePreview = document.getElementById("image-preview");
-const clearBtn = document.getElementById("clear-btn");
+const display = document.getElementById("display");
 
-let conversationHistory = [];
-let pendingImage = null;
-let isLoading = false;
+// The hidden buffer that accumulates key presses
+let secretBuffer = "";
+let isAwaitingResponse = false;
 
-// Auto-resize textarea
-textInput.addEventListener("input", () => {
-  textInput.style.height = "auto";
-  textInput.style.height = Math.min(textInput.scrollHeight, 120) + "px";
-});
-
-// Enter to send, Shift+Enter for newline
-textInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && !e.shiftKey) {
-    e.preventDefault();
-    sendMessage();
-  }
-});
-
-sendBtn.addEventListener("click", sendMessage);
-clearBtn.addEventListener("click", () => {
-  conversationHistory = [];
-  messagesDiv.innerHTML = "";
-  clearImage();
-});
-
-// Image handling
-imageInput.addEventListener("change", async (e) => {
-  const file = e.target.files[0];
-  if (!file) return;
-  pendingImage = await resizeAndEncode(file);
-  imagePreview.style.display = "inline-block";
-  imagePreview.innerHTML = `
-    <img src="${pendingImage}">
-    <button class="remove-img" onclick="clearImage()">x</button>
-  `;
-  imageInput.value = "";
-});
-
-function clearImage() {
-  pendingImage = null;
-  imagePreview.style.display = "none";
-  imagePreview.innerHTML = "";
-}
-// Make clearImage available to onclick
-window.clearImage = clearImage;
-
-function resizeAndEncode(file) {
-  return new Promise((resolve) => {
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const img = new Image();
-      img.onload = () => {
-        const maxSize = 1024;
-        let { width, height } = img;
-        if (width > maxSize || height > maxSize) {
-          const scale = maxSize / Math.max(width, height);
-          width = Math.round(width * scale);
-          height = Math.round(height * scale);
+document.addEventListener("keydown", async (e) => {
+    // Avoid interfering if they hold Ctrl/Cmd
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    
+    // Normal backspace interaction
+    if (e.key === "Backspace") {
+        secretBuffer = secretBuffer.slice(0, -1);
+        return;
+    }
+    
+    // If Enter is pressed, dispatch the request
+    if (e.key === "Enter") {
+        e.preventDefault();
+        
+        // Only send if there's an actual message
+        if (secretBuffer.trim() !== "" && !isAwaitingResponse) {
+            const messageToSend = secretBuffer.trim();
+            secretBuffer = ""; // Reset immediately
+            
+            // Notice: We DO NOT change the calculator display to show "Calculating..."
+            isAwaitingResponse = true;
+            
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        messages: [{ role: 'user', content: messageToSend }]
+                    })
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data && data.reply) {
+                        display.style.fontSize = "16px"; // shrink font for text readability
+                        display.style.fontWeight = "400";
+                        display.innerText = data.reply;
+                    }
+                }
+            } catch (err) {
+                // Fails silently, maintain the camouflage
+            } finally {
+                isAwaitingResponse = false;
+            }
         }
-        const canvas = document.createElement("canvas");
-        canvas.width = width;
-        canvas.height = height;
-        canvas.getContext("2d").drawImage(img, 0, 0, width, height);
-        resolve(canvas.toDataURL("image/jpeg", 0.85));
-      };
-      img.src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  });
-}
+        return;
+    }
+    
+    // Append standard characters to the secret buffer
+    if (e.key.length === 1) {
+        secretBuffer += e.key;
+        return;
+    }
+});
 
-async function sendMessage() {
-  const text = textInput.value.trim();
-  if ((!text && !pendingImage) || isLoading) return;
+// Add some fake calculator behavior so it behaves like a normal 
+// calculator if someone just clicks the numbers.
+let tempNum = "0";
 
-  // Build user message content
-  let content;
-  if (pendingImage) {
-    content = [];
-    if (text) content.push({ type: "text", text });
-    content.push({
-      type: "image_url",
-      image_url: { url: pendingImage },
+const buttons = document.querySelectorAll('.btn-num');
+buttons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const val = e.target.innerText;
+        if (tempNum === "0" && val !== ".") tempNum = "";
+        
+        // Reset display font if it was showing a chat message
+        display.style.fontSize = "48px";
+        display.style.fontWeight = "600";
+        
+        tempNum += val;
+        display.innerText = tempNum;
     });
-  } else {
-    content = text;
-  }
+});
 
-  const userMessage = { role: "user", content };
-  conversationHistory.push(userMessage);
-
-  // Render user message
-  renderMessage("user", text, pendingImage);
-
-  // Clear inputs
-  textInput.value = "";
-  textInput.style.height = "auto";
-  clearImage();
-
-  // Show thinking indicator
-  const thinkingEl = document.createElement("div");
-  thinkingEl.className = "message thinking";
-  thinkingEl.textContent = "Thinking...";
-  messagesDiv.appendChild(thinkingEl);
-  scrollToBottom();
-
-  isLoading = true;
-  sendBtn.disabled = true;
-
-  try {
-    const res = await fetch("/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: conversationHistory }),
+const clearBtn = document.getElementById('btn-clear'); 
+if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+        tempNum = "0";
+        display.style.fontSize = "48px";
+        display.style.fontWeight = "600";
+        display.innerText = tempNum;
+        secretBuffer = ""; // clear secret buffer too just in case
     });
-
-    const data = await res.json();
-    thinkingEl.remove();
-
-    if (!res.ok) {
-      renderMessage("assistant", "Error: " + (data.detail || "Something went wrong"));
-      return;
-    }
-
-    const reply = data.reply;
-    conversationHistory.push({ role: "assistant", content: reply });
-    renderMessage("assistant", reply);
-  } catch (err) {
-    thinkingEl.remove();
-    renderMessage("assistant", "Error: Could not reach the server.");
-  } finally {
-    isLoading = false;
-    sendBtn.disabled = false;
-  }
-}
-
-function renderMessage(role, text, imageDataUrl) {
-  const div = document.createElement("div");
-  div.className = `message ${role}`;
-
-  if (role === "assistant") {
-    div.innerHTML = marked.parse(text || "");
-  } else {
-    if (text) {
-      const p = document.createElement("p");
-      p.textContent = text;
-      div.appendChild(p);
-    }
-    if (imageDataUrl) {
-      const img = document.createElement("img");
-      img.src = imageDataUrl;
-      div.appendChild(img);
-    }
-  }
-
-  messagesDiv.appendChild(div);
-  scrollToBottom();
-}
-
-function scrollToBottom() {
-  messagesDiv.scrollTop = messagesDiv.scrollHeight;
 }
