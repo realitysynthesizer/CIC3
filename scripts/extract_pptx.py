@@ -1,6 +1,19 @@
 """Pure-text extraction from a .pptx file: no LLM involved, no hallucination risk."""
+import warnings
+
 from pptx import Presentation
-from pptx.util import Emu
+from pptx.enum.shapes import MSO_SHAPE_TYPE
+
+
+def _flatten_shapes(shapes):
+    """Recursively expand group shapes so nested text boxes/tables are visible."""
+    flat = []
+    for shape in shapes:
+        if shape.shape_type == MSO_SHAPE_TYPE.GROUP:
+            flat.extend(_flatten_shapes(shape.shapes))
+        else:
+            flat.append(shape)
+    return flat
 
 
 def _shape_text(shape):
@@ -27,15 +40,25 @@ def extract_slides(pptx_path):
         title = ""
         body_lines = []
 
-        for shape in slide.shapes:
-            if shape.has_text_frame or shape.has_table:
+        shapes = _flatten_shapes(slide.shapes)
+        # Reading order, not insertion/z-order: top-to-bottom, left-to-right.
+        shapes.sort(key=lambda s: (s.top if s.top is not None else 0,
+                                    s.left if s.left is not None else 0))
+
+        for shape in shapes:
+            if not (shape.has_text_frame or shape.has_table):
+                continue
+            try:
                 is_title = shape == slide.shapes.title
                 lines = _shape_text(shape)
-                if is_title and lines:
-                    title = lines[0]
-                    body_lines.extend(lines[1:])
-                else:
-                    body_lines.extend(lines)
+            except Exception as e:
+                warnings.warn(f"{pptx_path}: slide {i}: failed to read shape: {e}")
+                continue
+            if is_title and lines:
+                title = lines[0]
+                body_lines.extend(lines[1:])
+            else:
+                body_lines.extend(lines)
 
         notes = ""
         if slide.has_notes_slide:

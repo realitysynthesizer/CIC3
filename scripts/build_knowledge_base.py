@@ -12,6 +12,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -27,6 +28,8 @@ DATA_DIR = ROOT / "data"
 KNOWLEDGE_DIR = ROOT / "knowledge"
 MODEL = "gpt-5.4"
 MAX_RAW_CHARS_FOR_LLM = 20000  # cap what we send the LLM for topic/summary extraction
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -56,7 +59,8 @@ def slides_to_text(slides):
 
 def classify_deck(source_name, raw_text):
     """Ask the LLM for topics/summary/filename_slug describing this deck.
-    Falls back to a heuristic if no API key / call fails."""
+    Retries transient failures a couple of times before falling back to a
+    heuristic (used_llm=False) if no API key / all attempts fail."""
     prompt = (
         "You are cataloging a university lecture slide deck for a retrieval system. "
         "Given the slide content below, respond with ONLY a JSON object (no markdown fences) "
@@ -70,24 +74,31 @@ def classify_deck(source_name, raw_text):
         f"Deck source file: {source_name}\n\n"
         f"Slide content:\n{raw_text[:MAX_RAW_CHARS_FOR_LLM]}"
     )
-    try:
-        resp = client.chat.completions.create(
-            model=MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            response_format={"type": "json_object"},
-        )
-        data = json.loads(resp.choices[0].message.content)
-        topics = [str(t).strip() for t in data.get("topics", []) if str(t).strip()]
-        summary = str(data.get("summary", "")).strip()
-        filename_slug = slugify(str(data.get("filename_slug", "")), max_words=14)
-        if topics and summary and filename_slug:
-            return topics, summary, filename_slug
-    except Exception as e:
-        print(f"  ! LLM cataloging failed for {source_name}: {e}", file=sys.stderr)
+
+    for attempt in range(1, MAX_RETRIES + 2):  # initial attempt + retries
+        try:
+            resp = client.chat.completions.create(
+                model=MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                response_format={"type": "json_object"},
+            )
+            data = json.loads(resp.choices[0].message.content)
+            topics = [str(t).strip() for t in data.get("topics", []) if str(t).strip()]
+            summary = str(data.get("summary", "")).strip()
+            filename_slug = slugify(str(data.get("filename_slug", "")), max_words=14)
+            if topics and summary and filename_slug:
+                return topics, summary, filename_slug, True
+            raise ValueError(f"incomplete LLM response: {data}")
+        except Exception as e:
+            is_last = attempt == MAX_RETRIES + 1
+            print(f"  ! LLM cataloging failed for {source_name} "
+                  f"(attempt {attempt}/{MAX_RETRIES + 1}): {e}", file=sys.stderr)
+            if not is_last:
+                time.sleep(RETRY_DELAY_SECONDS)
 
     # Heuristic fallback: use slide titles as topics, no LLM required.
     stem = Path(source_name).stem
-    return [stem], f"Slide deck: {stem}", slugify(stem, max_words=14)
+    return [stem], f"Slide deck: {stem}", slugify(stem, max_words=14), False
 
 
 def build_filename(source_stem, filename_slug, topics):
@@ -106,7 +117,7 @@ def process_pptx(pptx_path, existing_sources, force):
     print(f"> processing: {source_name}")
     slides = extract_slides(pptx_path)
     raw_text = slides_to_text(slides)
-    topics, summary, filename_slug = classify_deck(source_name, raw_text)
+    topics, summary, filename_slug, used_llm = classify_deck(source_name, raw_text)
     filename = build_filename(pptx_path.stem, filename_slug, topics)
 
     entry = {
@@ -125,7 +136,7 @@ def process_pptx(pptx_path, existing_sources, force):
         "source_file": source_name,
         "topics": topics,
         "summary": summary,
-    }
+    }, used_llm
 
 
 def main():
@@ -147,14 +158,31 @@ def main():
         print(f"No .pptx files found in {DATA_DIR}")
         return
 
+    llm_classified = 0
+    heuristic_fallback = 0
+    failed = []
+
     for pptx_path in pptx_files:
-        result = process_pptx(pptx_path, existing_sources, force)
-        if result:
-            index["files"] = [f for f in index["files"] if f["source_file"] != result["source_file"]]
-            index["files"].append(result)
+        try:
+            outcome = process_pptx(pptx_path, existing_sources, force)
+        except Exception as e:
+            print(f"  ! failed to process {pptx_path.name}, skipping: {e}", file=sys.stderr)
+            failed.append(pptx_path.name)
+            continue
+
+        if outcome:
+            entry, used_llm = outcome
+            index["files"] = [f for f in index["files"] if f["source_file"] != entry["source_file"]]
+            index["files"].append(entry)
+            if used_llm:
+                llm_classified += 1
+            else:
+                heuristic_fallback += 1
 
     index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"\nIndex written: knowledge/index.json ({len(index['files'])} decks)")
+    print(f"Classified this run: {llm_classified} via LLM, {heuristic_fallback} via heuristic fallback"
+          + (f", {len(failed)} failed ({', '.join(failed)})" if failed else ""))
 
 
 if __name__ == "__main__":
