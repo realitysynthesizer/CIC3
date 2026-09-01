@@ -31,3 +31,6 @@ dist/
 Thumbs.db
 .vscode/
 .idea/
+
+# Source slide decks (large binaries, not needed once knowledge/ is built)
+data/*.pptx

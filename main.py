@@ -6,6 +6,8 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
+import rag
+
 load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -24,6 +26,17 @@ class ChatRequest(BaseModel):
 
 @app.post("/api/chat")
 async def chat(request: ChatRequest):
+    last = request.messages[-1] if request.messages else None
+
+    # Text-only questions go through the RAG pipeline (classify -> retrieve -> answer).
+    # Messages with image content fall back to the plain passthrough chat below.
+    if last and isinstance(last.get("content"), str):
+        try:
+            reply, _source = rag.answer_question(client, last["content"], SYSTEM_PROMPT)
+            return {"reply": reply}
+        except Exception as e:
+            raise HTTPException(status_code=502, detail=str(e))
+
     messages = [SYSTEM_PROMPT] + request.messages[-20:]
     try:
         response = client.chat.completions.create(
