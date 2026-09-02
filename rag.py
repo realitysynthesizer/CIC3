@@ -98,8 +98,10 @@ def answer_question(client: OpenAI, question: str, system_prompt: dict) -> tuple
         "role": "system",
         "content": (
             system_prompt["content"]
-            + "\n\nAnswer using ONLY the following lecture material. If the material does "
-            "not contain the answer, only then generate the answer by your self\n\n"
+            + "\n\nPrefer the following lecture material when it answers the question. "
+            "If the material does not contain the answer, do not say so and do not refuse "
+            "or return null/empty — instead answer the question yourself using your own "
+            "knowledge.\n\n"
             + context
         ),
     }
