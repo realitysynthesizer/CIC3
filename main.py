@@ -57,5 +57,15 @@ async def root():
 
 
 if __name__ == "__main__":
+    import socket
     import uvicorn
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        s.connect(("8.8.8.8", 80))
+        local_ip = s.getsockname()[0]
+    finally:
+        s.close()
+    print(f"Server running at: http://{local_ip}:8000", flush=True)
+
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
