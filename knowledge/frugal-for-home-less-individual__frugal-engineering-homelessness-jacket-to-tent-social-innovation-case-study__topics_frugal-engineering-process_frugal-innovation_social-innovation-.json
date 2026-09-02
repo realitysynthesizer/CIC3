@@ -1,0 +1,92 @@
+{
+  "source_file": "FRugal for home less individual.pptx",
+  "topics": [
+    "frugal engineering process",
+    "frugal innovation",
+    "social innovation definition",
+    "socially conscious product design",
+    "4 A's framework",
+    "acceptability availability accessibility affordability",
+    "homelessness case study",
+    "urbanization and socio-economic inequality",
+    "Berkeley California homelessness statistics",
+    "Los Angeles homelessness statistics",
+    "transformable jacket-to-tent wearable prototype",
+    "weather protection and sleep shelter design",
+    "design criteria and specifications",
+    "prototype evaluation and validation",
+    "thermal insulation and tent robustness drawbacks"
+  ],
+  "summary": "This deck presents a 2023 case study on applying the frugal engineering process to socially conscious design for homeless individuals. It defines social and frugal innovation, emphasizes the 4 A's framework, and describes the design, specifications, and evaluation of a low-cost wearable jacket that transforms into a tent for weather protection and shelter. The prototype is assessed against commercial alternatives, showing favorable price and satisfactory performance, with limitations in thermal insulation and tent robustness.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Frugal Engineering Process for Frugal Innovation: Socially Conscious Designs for Homeless Individuals (Case study)",
+        "Social innovations are defined as new solutions (products, services, models, markets, processes, etc.) that simultaneously meet a social need (more effectively than existing solutions) and lead to new or improved capabilities and relationships and better use of assets and resources.",
+        "Frugal innovation is becoming a mainstream approach to many successful social innovations necessary for improving the affordability and accessibility of socially conscious product design solutions.",
+        "Frugal engineering needs to deliver on the 4 A’s – ‘acceptability, availability, accessibility, and affordability’ for successful product development",
+        "Understanding Frugal Engineering Process for Frugal Innovations: Socially Conscious Designs for Homeless Individuals, A Case Study, 2023"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Case study: Design approach, Methods, and Validation",
+        "Problem Statement",
+        "Homelessness is defined as the state of being without a home.",
+        "Rising urbanization and socio-economic inequalities have increased homelessness worldwide.",
+        "Lack of shelter leads to poor physical health, mental stress, food insecurity, and financial hardship.",
+        "Berkeley, California:",
+        "44% of the counted homeless population slept outdoors, on streets, parks, or in tents.",
+        "49% of surveyed homeless individuals reported sleeping outdoors.",
+        "Los Angeles:",
+        "64% of homeless individuals had lived in the county for 10 years or more before becoming homeless.",
+        "Target: Design an innovative wearable prototype of a jacket (for weather protection) that can be transformed into a tent (for sleep/shelter)"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Design criteria"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "Design methods",
+        "Transformable wearable prototype from jacket configuration to the tent configuration",
+        "Details of folds for jacket prototype (dimensions in mm)"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Specifications of design",
+        "Comparison of tent configuration and jacket configuration is made with two separate products as no commercial transformable product exists for comparison"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Evaluation of prototype",
+        "Overall, the factors considered, on average, both the tent and wearable jacket configurations were rated close to 1 (1.18 for the tent configuration and 0.91 for the wearable jacket state)",
+        "Price point for this frugally engineered prototype was lower than both the comparative commercial products.",
+        "The performance of this prototype was considered satisfactory within the set boundary conditions and design criteria for a socially conscious product.",
+        "Key drawbacks of the prototype mainly related to the thermal insulation and robustness of tent configuration"
+      ],
+      "notes": ""
+    }
+  ]
+}

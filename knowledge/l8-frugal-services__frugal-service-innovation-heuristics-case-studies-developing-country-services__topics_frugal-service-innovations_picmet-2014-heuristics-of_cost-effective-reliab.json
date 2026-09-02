@@ -1,0 +1,180 @@
+{
+  "source_file": "L8_Frugal Services.pptx",
+  "topics": [
+    "frugal service innovations",
+    "PICMET 2014 heuristics of frugal service innovations",
+    "cost-effective reliable accessible services",
+    "service delivery cost reduction and reliability",
+    "service process evaluation framework",
+    "input-people-resources-process-service delivery-outcome",
+    "process mapping and reliability analysis",
+    "three innovation heuristics framework",
+    "combining existing resources bricolage",
+    "reuse of existing infrastructure and service platforms",
+    "SuperSeva integrated concierge services",
+    "Mumbai Dabbawalas railway-based delivery system",
+    "reducing time materials and human effort",
+    "standardized workflows and continuous operations",
+    "Indian software companies 24-hour global development cycle",
+    "Jayashree Industries sanitary napkin units",
+    "creating self-service options",
+    "missed call service in India",
+    "Vortex Gramateller rural ATMs"
+  ],
+  "summary": "The deck explains frugal services as low-cost, reliable, and accessible service models that maximize value through efficient resource use, and discusses why they are harder to assess than frugal products because they require end-to-end process and reliability analysis. It presents a three-heuristic framework for frugal service innovation—bricolage, reducing time/materials/human effort, and creating self-service options—illustrated with case studies including SuperSeva, Mumbai Dabbawalas, Indian software firms, Jayashree Industries, missed-call services, and Vortex-Gramateller ATMs.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Heuristics of Frugal Service Innovations",
+        "Heuristics of Frugal Service Innovations, 2014 Proceedings of PICMET '14"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Frugal Services",
+        "Frugal innovation is not limited to physical products. It can also be applied to services.",
+        "Frugal services are cost-effective, reliable, and accessible service solutions designed to deliver maximum value by minimizing the use of resources without compromising service quality.",
+        "Deliver high-quality services at the lowest possible cost through innovative service design and efficient resource utilization.",
+        "Challenges in Service Delivery",
+        "High service delivery costs",
+        "Requirement for reliable and error-free services",
+        "Need to serve large customer at affordable prices",
+        "Importance of scalable and sustainable service models",
+        "Objective:Develop services that reduce operational cost while maintaining reliability."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Why are frugal services harder to identify than frugal products?",
+        "A physical product can often be examined directly.",
+        "For example, an expert can look at a device and evaluate whether it uses fewer components, uses low-\tcost materials, simpler design, or provides good performance at a low price.",
+        "However, a service is different because its cost and quality depend on many connected processes.",
+        "To evaluate whether a service is truly frugal, we need to examine the complete service process:",
+        "Input → People → Resources → Process → Service delivery → Outcome",
+        "We must also check whether the service remains reliable over time.",
+        "Service innovation requires detailed process mapping and analysis of reliability."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "Three Innovation Heuristics Framework",
+        "Combining Existing Resources (Bricolage)",
+        "Reducing Time, Materials and Human Effort",
+        "Creating Self-Service Options"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Heuristic 1 – Combining Existing Resources (Bricolage)",
+        "Use existing infrastructure, materials, and processes instead of creating new ones.",
+        "Techniques",
+        "Reuse existing service platforms",
+        "Utilize government/private infrastructure",
+        "Integrate multiple services",
+        "Benefits",
+        "Lower implementation cost",
+        "Faster deployment",
+        "Improved service reliability"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Case Studies",
+        "SuperSeva",
+        "Integrated more than 80 concierge services",
+        "Utilize existing government and commercial services",
+        "High-volume operations reduced service cost",
+        "Mumbai Dabbawalas",
+        "Used railway network, bicycles, and hand carts",
+        "Standardized delivery process",
+        "Extremely low delivery cost with high accuracy"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Heuristic 2 – Reducing Time, Materials & Human Effort",
+        "Simplify service processes",
+        "Standardize workflows",
+        "Reduce material usage",
+        "Improve workforce productivity",
+        "Operate continuously where possible",
+        "Benefits",
+        "Faster service delivery",
+        "Lower operating expenses",
+        "Higher productivity",
+        "Better scalability"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "Case Studies",
+        "Indian Software Companies",
+        "Standardized software development",
+        "Trained non-engineering graduates",
+        "24-hour global development cycle",
+        "Jayashree Industries",
+        "Portable sanitary napkin manufacturing units",
+        "Local production and distribution",
+        "Reduced transportation and packaging costs"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        "Heuristic 3: Creating self service options",
+        "Traditional self-service systems from developed countries may not always work directly in developing countries.",
+        "Higher-income customers may prefer personal assistance.",
+        "Lower-income users may find complicated self-service technologies difficult to use.",
+        "Innovators must design self-service options that are simple, familiar, affordable, easy to understand, and suitable for local users.",
+        "Example : “Missed Call” service in India",
+        "A company advertises a specific phone number.",
+        "A customer gives a missed call to that number.",
+        "The call is not answered, so the customer is not charged.",
+        "The automated system recognizes the call.",
+        "The customer receives the required information or service automatically."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        "Example : Vortex-Gramateller rural ATMs",
+        "The example shows how self-service can be redesigned for remote and resource-constrained areas.",
+        "Vortex-Gramateller was designed to be:",
+        "solar powered",
+        "low power",
+        "rugged and robust",
+        "suitable for areas with unreliable electricity",
+        "accessible to users with limited literacy.",
+        "Summary: Three simple innovation principles (heuristics) for creating low-cost but reliable services, especially for developing countries where customers are highly price-sensitive."
+      ],
+      "notes": ""
+    }
+  ]
+}

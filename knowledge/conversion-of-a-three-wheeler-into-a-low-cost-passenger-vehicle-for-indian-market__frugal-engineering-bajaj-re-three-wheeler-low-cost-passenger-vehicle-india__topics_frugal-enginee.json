@@ -1,0 +1,94 @@
+{
+  "source_file": "Conversion of a Three-Wheeler into a Low-Cost Passenger Vehicle for Indian Market.pptx",
+  "topics": [
+    "frugal engineering",
+    "low-cost passenger vehicle for Indian market",
+    "affordability gap in personal transport",
+    "need for affordable travel in India",
+    "auto-rickshaw limitations",
+    "Bajaj RE Diesel three-wheeler conversion",
+    "three-wheeler to four-wheeled car",
+    "chassis extension using used Bajaj RE front half",
+    "rack-and-pinion steering system",
+    "1.2 mm galvanized iron body panels",
+    "tandem master cylinder four-wheel brakes",
+    "use of locally sourced materials",
+    "vehicle safety program and crash testing",
+    "bill of materials cost analysis",
+    "market viability and scale-up assessment"
+  ],
+  "summary": "This deck presents a frugal engineering case study on converting a Bajaj RE Diesel three-wheeler into a low-cost four-wheeled passenger vehicle for the Indian market. It explains the affordability gap driving the concept, outlines key low-cost design choices such as chassis extension, rack-and-pinion steering, GI sheet body panels, and a tandem master cylinder, and identifies next steps including safety validation, regulatory compliance, cost analysis, design refinement, and market feasibility.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Conversion of a Three-Wheeler into a Low-Cost Passenger Vehicle for Indian Market",
+        "Frugal Engineering in Practice: A Case Study on the Conversion of a Three-Wheeler into a Low-Cost Passenger Vehicle for the Indian Market"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Need for Affordable Travel in India",
+        "Many people in India want personal transport, but most cars are too expensive.",
+        "Three-wheeled auto-rickshaws are cheap but don't have a closed cabin, aren't very stable, and can't carry many people.",
+        "Even cheapest cars are too costly for many, creating a big \"affordability gap\"",
+        "How \"Frugal Engineering\" helps:",
+        "Clever, making smart choices, and keeping costs very low",
+        "Focus on making things work well with limited money and resources"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Goal: Build a four-wheeled vehicle that's much cheaper than current cars",
+        "Our Method",
+        "We followed frugal engineering rules, focusing on keeping costs down and using materials found locally.",
+        "We converted a regular Bajaj RE Diesel three-wheeler into a four-wheeled car"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "Key Design Choices",
+        "Making Frame Longer (Chassis Extension):",
+        "What We Did: We attached the front half of another used Bajaj RE chassis",
+        "Used cheap, ready-made parts, which helped line up the suspension correctly without needing special tools.",
+        "Steering System:",
+        "What We Did: Used rack-and-pinion steering system.",
+        "Why It Was Smart: This gave a more car-like steering feel and used cheap, standard parts",
+        "Body Panels (Outer Shell):",
+        "What We Did: Used 1.2 mm thick Galvanized Iron (GI) sheets.",
+        "Why It Was Smart: These sheets are cheap, easy to find, and simple to work with using basic tools",
+        "Brake System:",
+        "What We Did: Installed a tandem master cylinder.",
+        "Why It Was Smart: This is needed to operate brakes on all four wheels and adds a safety feature by having a backup."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "What to Do Next",
+        "Make it safe with a full safety program",
+        "Do detailed analysis to check its strength, how weight is spread, and how it would handle a crash.",
+        "Perform real crash tests to make sure the structure protects people.",
+        "Make sure it follows all rules and laws so it can be registered and driven legally",
+        "More Research Needed",
+        "Figure out the exact cost of every part (Bill of Materials).",
+        "Improve the design and materials to make it lighter and use less fuel.",
+        "Measure noise, vibration, and shakiness more accurately and do more road tests.",
+        "See if people would actually buy and use it, and if it can be made on a larger scale."
+      ],
+      "notes": ""
+    }
+  ]
+}

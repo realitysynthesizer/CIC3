@@ -1,0 +1,295 @@
+{
+  "source_file": "L5_Approach for Developing Frugal Innovations (1).pptx",
+  "topics": [
+    "constraint-based thinking",
+    "frugal innovation development process",
+    "emerging market constraints",
+    "low purchasing power and limited healthcare access",
+    "weak infrastructure and resource scarcity",
+    "regulatory limitations",
+    "theory of constraints (TOC)",
+    "converting constraints into product requirements",
+    "root cause analysis and 5 Whys",
+    "inverted U relationship between constraints and creativity",
+    "channeling vs limiting constraints",
+    "GE Lullaby Warmer case study",
+    "iBreastExam / UE LifeSciences case study",
+    "problem space vs solution space",
+    "minimum viable product (MVP) in frugal design"
+  ],
+  "summary": "This deck explains how frugal innovations are developed by treating constraints in emerging markets as the starting point for design rather than as obstacles. It presents a structured approach that identifies constraints, uses root cause analysis to uncover underlying problems, converts them into product requirements, and iteratively develops a frugal MVP. Case studies including GE Lullaby Warmer and iBreastExam illustrate how low-cost, robust, user-friendly solutions emerge from this process.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "How are frugal innovations actually developed?",
+        "Constraints as drivers of innovation",
+        "Typical constraints in emerging markets",
+        "Low purchasing power",
+        "Limited healthcare access",
+        "Weak infrastructure",
+        "Resource scarcity",
+        "Regulatory limitations",
+        "Examples",
+        "Identify Constraints",
+        "What limits current solutions?",
+        "Why are customers unable to use existing products?",
+        "Domain | Constraint",
+        "Healthcare | No specialists",
+        "Rural Area | Poor electricity",
+        "Customers | Low income",
+        "Infrastructure | Limited internet",
+        "Constraint-Based Thinking: A Structured Approach for Developing Frugal Innovations"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Convert Constraints into Product Requirements",
+        "Constraint | Product Requirement",
+        "No electricity | Battery operation",
+        "High cost | Simplified design",
+        "Low literacy | Easy interface",
+        "Remote area | Portable device",
+        "Case Study Examples",
+        "GE Lullaby Warmer",
+        "Constraints:",
+        "Expensive neonatal warmers",
+        "Poor infrastructure",
+        "Solutions:",
+        "Simplified design",
+        "Lower manufacturing cost",
+        "Reliable operation",
+        "iBreastExam",
+        "Constraints:",
+        "Lack of breast cancer screening",
+        "Limited trained professionals",
+        "Solutions:",
+        "Portable device",
+        "Easy operation",
+        "Affordable screening"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Theory of Constraints (TOC)",
+        "A constraint is anything that limits the performance of a system.",
+        "Constraints = Problems or Obstacles",
+        "TYPES OF CONSTRAINTS",
+        "A constraint is anything that limits the performance or freedom of a system.",
+        "Examples: Only 5000/- available for a project. Only two engineers in a team. No internet connectivity. Limited power supply.  Limited manufacturing equipment. How to solve?",
+        "Every engineering project has some constraints.",
+        "Traditional View",
+        "Constraint",
+        "Less freedom",
+        "Less innovation",
+        "Poor performance"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "Modern View",
+        "Now you begin asking:",
+        "Can I reduce components?",
+        "Can software replace hardware?",
+        "Can I reuse existing modules?",
+        "Can AI reduce hardware complexity?",
+        "Constraint",
+        "↓",
+        "Creative Solution",
+        "↓",
+        "Innovation",
+        "Innovation does not continuously increase with constraints. Instead, it follows an Inverted U curve.",
+        "A. Limiting Constraints: These reduce creativity.",
+        "Examples: Excessive time pressure, Too many regulations",
+        "B. Channeling Constraints: These actually improve innovation.",
+        "Examples: Budget limit, Weight limit, Power consumption limit , Maximum product cost, Clear design requirements"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Constraints Force \"Out-of-the-Box\" Thinking",
+        "Table provides a brief overview of several decades’ study evaluating the influence of constraints on innovation and creativity",
+        "Influence | Finding | Explanation",
+        "Positive | Time pressure improved usefulness, innovation, and productivity. | A moderate deadline motivates people to focus and work efficiently.",
+        "Negative | Too much time pressure reduced innovation and productivity. | Excessive deadlines create stress, reducing creativity.",
+        "Ambivalent | Constraints differ for small and large organizations. | The same constraint has different effects depending on the organization.",
+        "Ambivalent | Inverted U-shaped relationship between time pressure and creativity. | Too little pressure - people procrastinate. Moderate pressure - highest creativity. Too much pressure - creativity declines.",
+        "Ambivalent | Context determines whether constraints help or hurt. | The environment matters. The same constraint may be useful in one situation but harmful in another.",
+        "Ambivalent | Product and process constraints affect creativity differently. | Different constraints influence different parts of innovation.",
+        "Positive | Design constraints stimulate creativity. | Working within clear limits encourages creative thinking.",
+        "Negative | Bureaucratic barriers hinder innovation. | Too many approvals slow down progress.",
+        "Negative | Financial, market, and regulatory constraints can inhibit innovation. | Lack of funding or strict regulations can stop promising ideas.",
+        "Positive | Moderate constraints foster innovation. | Innovation is highest when constraints are balanced, not too few and not too many.",
+        "Negative | Too few constraints cause complacency; too many reduce motivation. | Unlimited resources reduce urgency, while excessive restrictions frustrate teams."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Linking Constraints to Frugal Innovation",
+        "Frugal Innovation Characteristics",
+        "Low Cost",
+        "Core Functionality",
+        "Good Performance",
+        "User Friendly",
+        "Robust",
+        "Constraints",
+        "↓",
+        "Identify Root Causes",
+        "↓",
+        "Convert into Product Requirements",
+        "↓",
+        "Develop Frugal Solution",
+        "Frugal innovation does not eliminate constraints. It uses constraints as a design challenge.",
+        "OneDollarGlasses, M-Pesa mobile banking, ChotuKool refrigerators, Haier washing machines for clothes and vegetables, and PeekVision eye diagnostics are examples of such frugal innovations"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Root Cause Analysis",
+        "Root Cause Analysis:  Understand the real reason behind each constraint.",
+        "Process of repeatedly asking \"Why did this happen?\" until the fundamental cause of a problem is identified, allowing a permanent solution rather than a temporary fix.",
+        "Example 2: Student Performance",
+        "Problem: Students scored poorly in the exam.",
+        "Why? → They could not answer application based questions.",
+        "Why? → They memorized concepts instead of understanding.",
+        "Why? → Teaching focused theory rather than problem solving.",
+        "Why? → Few practical examples and activities were included.",
+        "Root Cause:Teaching approach focused on memorization rather than conceptual learning.",
+        "Solution:Include case studies, hands-on activities, and problem-based learning."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        "Problem: Farmers waste large amounts of water.",
+        "Why 1?→ Irrigation is done manually.",
+        "Why 2?→ Farmers don't know the soil moisture level.",
+        "Why 3?→ Moisture sensors are unavailable.",
+        "Why 4?→ Existing systems are expensive.",
+        "Why 5?→ Technologies are designed for large farms.",
+        "Root Cause:❖ Affordable sensing technology is unavailable.",
+        "Problem: Phone battery lasts only a few hours.",
+        "Why 1?→ Too many apps run continuously.",
+        "Why 2?→ Background processes are always active.",
+        "Why 3?→ Default settings prioritize convenience.",
+        "Why 4?→ Battery optimization is disabled.",
+        "Why 5?→ Users are unaware of power-saving settings.",
+        "Root Cause:❖ Poor battery management and user awareness."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        "In reality, one problem usually has multiple root causes, not a single one. RCA is about identifying all significant causes, then deciding which ones to address first. This is especially important in frugal innovation.",
+        "Problem: Low Vaccination Rate in a Village",
+        "Possible Root Causes:",
+        "Clinic is far away.",
+        "Vaccine supply is inconsistent.",
+        "Parents are unaware of vaccine schedules.",
+        "Fear due to misinformation.",
+        "No transportation.",
+        "Clinic timings conflict with work hours.",
+        "RCA Conclusion:The problem is caused by multiple factors, not just one.",
+        "Frugal Solution:",
+        "SMS reminders for awareness.",
+        "Monthly mobile vaccination camps.",
+        "Local health volunteers for education.",
+        "Instead of building a new hospital (high cost), several low-cost solutions address the major root causes."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        "Case study 1",
+        "Root-cause analysis of UE LifeSciences with a focus on constraints."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        "Mapping of constraints to frugal features for iBreastExam."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        "Case study 2",
+        "Root-cause analysis of GE Lullaby Warmer with a focus on constraints."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        "Mapping of constraints to frugal features for GE Lullaby Warmer."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        "Constraint-based thinking problem and solution space",
+        "Problem Space (\"Why?\") identifies the real-world challenges and constraints.",
+        "Solution Space (\"What?\") translates those constraints into product features.",
+        "Constraint-based thinking prevents overengineering by focusing only on essential requirements.",
+        "Process is iterative, moving back and forth between understanding the problem and refining solution until frugal product is achieved."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        "Implications",
+        "Constraint-Based Thinking",
+        "Traditional Design Approach",
+        "Identify Constraints",
+        "↓",
+        "Find Root Causes",
+        "↓",
+        "Convert Constraints into Product Requirements",
+        "↓",
+        "Develop Minimum Viable Product (MVP)",
+        "Customer Need",
+        "↓",
+        "Design Product",
+        "↓",
+        "Launch Product",
+        "Constraints are not obstacles; they are the driving force behind frugal innovation.",
+        "Traditional innovation often begins with available technology, new features, market competition; Frugal innovation begins with Constraints, Resource limitations and Unmet needs."
+      ],
+      "notes": ""
+    }
+  ]
+}

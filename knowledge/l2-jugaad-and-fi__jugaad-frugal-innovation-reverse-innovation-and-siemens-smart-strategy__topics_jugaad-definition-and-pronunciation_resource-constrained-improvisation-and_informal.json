@@ -1,0 +1,265 @@
+{
+  "source_file": "L2_Jugaad and FI.pptx",
+  "topics": [
+    "Jugaad definition and pronunciation",
+    "resource-constrained improvisation and clever hacks",
+    "informal trial-and-error problem solving",
+    "safety and reliability trade-offs in jugaad",
+    "forms of jugaad with everyday examples",
+    "incremental innovation and grassroots innovation",
+    "Jugaad vs frugal innovation comparison",
+    "responsible jugaad and ethical governance",
+    "jugaad enablers: culture leadership mindset",
+    "COVID-19 jugaad characteristics",
+    "when to use jugaad vs frugal engineering",
+    "hybrid strategy from jugaad to frugal",
+    "traditional innovation vs reverse innovation",
+    "shampoo sachets Unilever reverse innovation case",
+    "Siemens SMART frugal innovation strategy"
+  ],
+  "summary": "The deck explains jugaad as a resourceful, improvised workaround for immediate problems, contrasts it with frugal innovation as a systematic, scalable, quality-conscious approach, and discusses where each is appropriate. It also introduces responsible jugaad, a hybrid path from idea discovery to scalable frugal engineering, and connects these ideas to reverse innovation through examples such as shampoo sachets and Siemens’ SMART strategy.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Jugaad",
+        "Jugaad (pronounced “joo-gaad”) is a colloquial Hindi term that roughly translates to a clever hack, workaround, or improvisation.",
+        "Focuses on making do with available resources",
+        "Solves today's problem",
+        "Often informal",
+        "May sacrifice reliability",
+        "Usually individual-driven",
+        "Example: A farmer uses a motorcycle engine to power a water pump because no electric pump is available. It works temporarily but may not be safe or efficient."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "More Examples..",
+        "Jugaad and innovation: Which links?"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Chilled air splitting with trouser to bring cold air to both the rooms, even though not so efficient (example A). Cooking under restricted conditions (example B). The space and convenience optimization in train journey (example C). The device prepared during the catastrophic condition in Apollo 13 mission (example D). The determination of the lady to straighten her hair in any case, shows the severity of the need and the tool used by the lady to meet her need (example E).",
+        "No engineering calculation or safety studies are done.  It is mostly a hit and trial method that ends up upon achievement of desired either goal or giving it up. This kind of Jugaad usually looks ugly, appear situation-specific and has less applicability to other cases.",
+        "Motorbike with roof and sealing fan (example F). Bicycle with car steering handle (example G). Clay refrigerator widely used in villages to prepare cooking pots/utensils in a creative way (example H). The multi-level cooking device, a creative design of a local fabricator to recover the heat energy (example I). Not all the individuals have needed skills to go for creative Jugaad. Such kind of Jugaad also sometimes adds some additional features to an already existing product. Such Jugaad could be similar to incremental innovation or grassroots innovation.",
+        "The motorbike driven pesticide spray/ploughing vehicles. The stair climbing wheel chair for disables. For such Jugaad, however, a high level of education might not be necessary. The know-how in typical sector is the key factor of success in such Jugaad. In general, such solutions do have potentiality of mass production.",
+        "Forms of Jugaad with examples"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Jugaad | Frugal Innovation",
+        "Improvised, resource-constrained solution to solve an immediate problem | Systematic innovation to deliver more value with fewer resources",
+        "Ad hoc, creative workaround | Planned, research-driven, and scalable",
+        "Quick fix | Long-term, affordable, sustainable solution",
+        "May compromise quality, safety, or durability | Maintains quality, safety, and reliability",
+        "Usually difficult to scale | Designed for large-scale deployment",
+        "Trial-and-error | Scientific and engineering principles",
+        "Often absent | Essential component",
+        "Repairing machinery using locally available materials | Designing a low-cost medical device meeting regulatory standards"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Jugaad in COVID-19 situation",
+        "Few characteristics of jugaad:",
+        "Quick solutions",
+        "Do more with less",
+        "Find replacement of materials, functions, and forms",
+        "Make it simple",
+        "Constraints of resources",
+        "No need for tech to solve all the issues",
+        "Maximum usage of available resources",
+        "Focus on the core functionality",
+        "Use your survival instincts",
+        "Think and act flexibly",
+        "https://uxdesign.cc/jugaad-to-frugal-innovation-and-beyond-67ab2cd10509"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "When to Use Jugaad and FI",
+        "Crisis management (e.g., disaster zones, refugee camps)",
+        "Bootstrapped startups prototyping MVPs",
+        "Grassroots innovation in rural/remote areas",
+        "Rapid experimentation in informal economies",
+        "Frugal Engineering is ideal for:",
+        "Building cost-effective, durable solutions for mass markets",
+        "Innovating for the “next billion” consumers",
+        "Developing emerging market products within a corporate R&D framework",
+        "Jugaad is about survival. It’s about “what can I build with what I have right now?”",
+        "Frugal innovation is about design discipline"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        "Responsible Jugaad",
+        "Responsible Jugaad :",
+        "Retain the creativity, flexibility, and affordability of jugaad while eliminating unethical, illegal, and poor-quality practices.",
+        "Positive side",
+        "Creativity",
+        "Resourcefulness",
+        "Flexibility",
+        "Cost-effectiveness",
+        "Rapid problem solving",
+        "Negative side",
+        "Low quality",
+        "Bribery",
+        "Illegal practices",
+        "Unsafe products",
+        "Ethical violations"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        "Jugaad Enablers",
+        "Organizational Culture",
+        "Organisational leadership",
+        "Individual Mindset",
+        "jugaad enablers combined give rise to responsible jugaad.",
+        "Example :",
+        "A company adopted a new spinning-yarn technology that reduced material consumption and costs. Rather than rushing the decision, it consulted regulators, involved shareholders, ensured ethical compliance.",
+        "A company organized a hackathon to redesign one of its products. Engineers developed a solution that reduced manufacturing costs by about 7% without compromising quality. The company ensured that ethical standards were maintained throughout the design, production, and after-sales processes.",
+        "Responsible Jugaad retains this creativity but adds organizational culture, leadership, ethics, governance, and quality. Once these elements are supported by structured R&D, policies, and strategic planning, the approach becomes frugal innovation.",
+        "The paradox of responsible Jugaad innovation: Implications for Indian multinational corporations"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        "Hybrid Strategy: From Jugaad to Frugal",
+        "Jugaad helps you find the idea, Frugal helps you scale it",
+        "Jugaad as an attitude and Frugal as an engineering process",
+        "Jugaad can give you an edge in the discovery phase. But once you find product-market fit, transition to frugal principles to scale reliably",
+        "https://medium.com/@hamed.kohan/jugaad-vs-frugal-innovation-de0729ad2e42"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        "Traditional Innovation vs. Reverse Innovation",
+        "Traditional Innovation",
+        "Before globalization, multinational companies typically followed this sequence",
+        "Developed Country (USA, Europe, Japan)",
+        "Design & Develop Product",
+        "Sell in Developed Countries",
+        "Adapt and Sell in Emerging Countries",
+        "Example",
+        "USA develops premium multi-blade razor",
+        "Successful in developed markets",
+        "Introduces lower-cost or adapted versions",
+        "for emerging markets like India"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        "Reverse Innovation: Innovation developed first in an emerging country and later transferred to developed countries.",
+        "Emerging country (India, China, Brazil)",
+        "Develop product",
+        "Successful in emerging markets",
+        "Expand to other emerging countries",
+        "Introduce into developed countries",
+        "Why Is Reverse Innovation Important?",
+        "Growth",
+        "New Market Opportunities",
+        "Better Engineering",
+        "Connection with Bottom of Pyramid"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        "Case study: Shampoo Sachets (Unilever) are an example of reverse innovation",
+        "Small single-use shampoo sachets became extremely popular in India and other emerging markets because many consumers could not afford a full bottle of shampoo. Companies recognized this need and popularized sachet packaging in the 1980s and 1990s.",
+        "Packaging concept (small sachets) was later adopted in developed markets for:",
+        "Travel-size products",
+        "Hotel amenities",
+        "Sample packs",
+        "Single-use cosmetics",
+        "Not everyone considers this a pure reverse innovation: Called Frugal packaging innovation"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        "Reverse innovation relation with Frugal innovation"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        "Siemens' Frugal Innovation Strategy",
+        "Siemens is a German multinational company headquartered in Munich & Berlin, Germany. Siemens has divided its business into four sectors Energy, Healthcare, Industry and Infrastructure & Cities.",
+        "Why did Siemens start the SMART initiative?",
+        "Around 2005–2010, Siemens observed that emerging markets such as India, China, Brazil, and Russia were growing very rapidly. These countries represented a huge business opportunity, but Siemens faced major challenges.",
+        "Local companies were producing low-cost products and gaining market share.",
+        "Other global companies had already established factories and local expertise in these countries.",
+        "Siemens realized that selling its expensive, high-end European products would not be enough. It needed a new strategy.",
+        "Letter | Meaning",
+        "S | Simple",
+        "M | Maintenance-friendly",
+        "A | Affordable",
+        "R | Reliable",
+        "T | Timely to market",
+        "Frugal and Reverse Innovation - Literature Overview and Case Study Insights from a German MNC in India and China"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        "Siemens realized that removing features from an existing expensive product is NOT enough. Instead, they needed to redesign the product, add features important for local users, remove unnecessary complexity. This is the main idea of frugal engineering.",
+        "SMART Product Development Process",
+        "Need Identification: Understand what customers actually need.",
+        "Cost Reduction: Reduce manufacturing cost without reducing quality.",
+        "Mix and Match: Combine different modules or components into the final product.",
+        "Disruptive SMART Approach",
+        "Siemens also introduced Disruptive SMART products.",
+        "Find new uses for existing technologies.",
+        "Develop products specifically for low- and medium-end markets.",
+        "Create innovations that can later be used globally (Reverse Innovation).",
+        "This combines:",
+        "Frugal Innovation → low-cost, resource-efficient products.",
+        "Reverse Innovation → products designed in emerging markets that later succeed in developed countries."
+      ],
+      "notes": ""
+    }
+  ]
+}

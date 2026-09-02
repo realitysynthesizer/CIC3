@@ -1,0 +1,816 @@
+{
+  "source_file": "L7_FI IOT and AI.pptx",
+  "topics": [
+    "frugal innovation through IoT and AI",
+    "Internet of Things definition and architecture",
+    "IoT sensing processing communication data exchange",
+    "smart agriculture soil-moisture sensor alerts",
+    "remote patient monitoring with SpO2 and cloud",
+    "predictive maintenance using vibration and temperature sensors",
+    "frugal IoT water tank monitoring with ultrasonic sensor and ESP32",
+    "normal vs frugal IoT design philosophy",
+    "cost reduction strategies for frugal IoT",
+    "lightweight IoT renovation for small and medium-sized apartments",
+    "LoRa and NB-IoT with edge computing and OpenHAB",
+    "IoT for sustainable development smart cities precision agriculture environmental monitoring",
+    "AI basics: computer vision machine learning NLP robotics",
+    "AI in IoT for smart city scenarios",
+    "frugal AI principles and related terms Lean Green Sustainable Responsible AI",
+    "frugal AI techniques: knowledge distillation pruning quantization transfer learning",
+    "case study student mindfulness monitoring with CCT EEG GSR and ANN",
+    "industry 4.0 applications and challenges of frugal AI",
+    "entrepreneurial knowledge moderating IoT AI effects on frugal innovation",
+    "smart hospitality as an application of frugal AI"
+  ],
+  "summary": "This deck introduces frugal innovation using IoT and AI, explaining core IoT concepts, examples, and how frugal IoT systems minimize cost, power, data transfer, and maintenance through lightweight hardware, local processing, and low-cost connectivity. It then covers AI fundamentals, AI-IoT integration, and the concept of frugal AI, including its principles, related frameworks, efficiency distinctions, techniques such as distillation and quantization, and multiple case studies in apartments, student monitoring, SMEs, industry 4.0, and hospitality.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Frugal innovation through internet of things (IoT) and artificial intelligence"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Frugal innovation through internet of things (IoT)",
+        "Internet of Things, or IoT, is a network of physical devices. These devices can transfer data to one another without human intervention.",
+        "https://www.sciencedirect.com/science/article/pii/S0040162524000829"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "IoT refers to a network of physical devices, vehicles, appliances, and other physical objects that are embedded with sensors, software, and network connectivity, allowing them to collect and share data.",
+        "IoT = sensing + processing + communication/data exchange."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "Some examples…",
+        "Smart agriculture",
+        "Soil-moisture sensor → microcontroller → internet → farmer's phone.",
+        "The farmer receives an alert when the soil becomes dry.",
+        "Smart electricity meter",
+        "A meter measures electricity consumption and sends data automatically to the utility company.",
+        "Smart home",
+        "A temperature sensor detects room temperature and communicates with a smart AC to adjust cooling.",
+        "Remote patient monitoring",
+        "Sensors measure heart rate, SpO₂, temperature → data transmitted to a mobile/cloud platform → doctor can monitor patient remotely.",
+        "Smart water tank",
+        "A water-level sensor detects the tank level and sends an alert when the tank is nearly empty or full.",
+        "Predictive maintenance",
+        "Vibration and temperature sensors monitor a motor → abnormal readings are transmitted → maintenance is performed before the motor fails.",
+        "Smart waste management",
+        "A sensor detects how full a garbage bin is → sends information to the municipal system → collection is scheduled only when needed."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Building Blocks of Frugal IoT",
+        "Example: Water Tank Monitoring",
+        "Normal IoT:",
+        "Industrial water-level sensor → Wi-Fi/4G → Cloud → App",
+        "Frugal IoT:",
+        "Ultrasonic sensor → ESP32 → local decision → SMS/alert",
+        "Frugal idea: Don't continuously send water-level data. Send an alert only when the tank is empty, full, or abnormal.",
+        "Note: This approach can also be applied to a general IoT system. However, a frugal IoT system should be specifically designed according to the application requirements, available resources, and cost constraints."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Normal Vs Frugal IoT",
+        " | Normal IoT | Frugal IoT",
+        "Objective | Maximum functionality and performance | Essential functionality at minimum cost",
+        "Cost | Can be relatively high | Affordable",
+        "Sensors | Multiple high-end sensors | Only essential sensors",
+        "Processing | Cloud/edge processing may be sophisticated | Simple local processing where possible",
+        "Connectivity | Wi-Fi/5G/high-bandwidth networks | Low-cost options such as BLE, LoRa, 2G/4G, etc.",
+        "Power | May require continuous power | Designed for low power/battery operation",
+        "Data | Large amounts of data | Only necessary data",
+        "Maintenance | May require specialized support | Easy to repair and maintain locally",
+        "Target users | General/industrial/high-end markets | Resource-constrained or underserved users",
+        "Design philosophy | \"What more can we add?\" | \"What is the minimum we need?\""
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Why Frugal IoT Matters",
+        "Not every IoT solution needs expensive sensors, cloud computing, or high-end hardware. Frugal IoT aims to deliver maximum value with minimum resources.",
+        "Challenges",
+        "High device cost",
+        "Power consumption",
+        "Poor internet connectivity",
+        "Maintenance issues",
+        "Limited affordability in rural and low-resource settings",
+        "Need IoT systems that are affordable, reliable, scalable, and sustainable."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "Cost Reduction Strategies",
+        "Hardware",
+        "Shared sensors",
+        "Off-the-shelf components",
+        "Open-source hardware",
+        "Software",
+        "Open-source firmware",
+        "TinyML",
+        "Free cloud platforms",
+        "Manufacturing",
+        "Modular design",
+        "3D printing",
+        "Local assembly",
+        "Maintenance",
+        "Plug-and-play modules",
+        "Remote firmware updates"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        "Case study",
+        "Small and medium-sized apartment companies want to introduce IoT, but they have several constraints:",
+        "Limited budget",
+        "Few technical staff",
+        "Existing/old infrastructure",
+        "High cost of conventional IoT systems",
+        "Complex installation and maintenance",
+        "So, a conventional smart-apartment solution may be too expensive and complicated for them.",
+        "Can we provide basic IoT functions using cheaper, simpler, lower-power technologies?",
+        "Integration and Cost Optimization of Lightweight IoT Technology in the Renovation of Small and Medium-Sized Apartments"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        "A conventional IOT system might install expensive smart locks, energy meters, gateways, cloud servers, communication modules, central management systems.",
+        "Lightweight IoT technology is a specialized solution engineered for resource-constrained environments. By optimizing hardware design, simplifying communication protocols, and leveraging edge computing, it significantly reduces system power consumption, cost, and complexity while maintaining highly efficient data transmission and processing capabilities.",
+        "Objective is not to maximize features, but to provide the necessary functionality at an affordable cost."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        "Frugal Strategy",
+        "Use existing infrastructure: They do not completely replace the apartment's existing locking system. The smart locks are selected so they can work with the existing system. This avoids unnecessary replacement costs.",
+        "Use lightweight communication: Instead of expensive/high-power communication systems, they use LoRa/NB-IoT. LoRa is particularly attractive because it provides long-range communication with relatively low power consumption.",
+        "They use edge computing rather than sending everything continuously to cloud. Sensor → Local/Edge processing → Useful information → Management system. This can reduce communication, latency, and cloud dependence.",
+        "Use open-source software: They use OpenHAB and perform secondary development instead of purchasing an expensive commercial IoT platform.",
+        "Reduce maintenance cost: Remote monitoring and diagnosis allow technicians to solve some problems without physically visiting every apartment.",
+        "Low-cost sensors are installed in the apartments.",
+        "Instead of replacing all the sensors, use adapter software. Different sensors → Adapter → Common data format → Existing management system. So, the apartment can reuse existing infrastructure instead of replacing everything."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        "Outcome",
+        "Operational risks: Sensor failure, Communication interruption, Data security"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        "IoT for Sustainable Development",
+        "Applications:",
+        "Smart Cities",
+        "Precision Agriculture",
+        "Environmental Monitoring"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        "Artificial intelligence (AI) is a set of technologies that empowers computers to learn, reason, and perform a variety of advanced tasks in ways that used to require human intelligence, such as understanding language, analyzing data, and even providing helpful suggestions."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        "Layman’s language",
+        "AI means making a machine behave or think in a way that looks like human intelligence.",
+        "AI tries to make machines behave intelligently like humans",
+        "Example 1: Face recognition",
+        "A human looks at a photo and thinks:",
+        "“This is my friend.”",
+        "An AI system can do something similar.",
+        "Human ability | AI equivalent",
+        "See | Computer vision",
+        "Learn | Machine learning",
+        "Think/decide | AI decision-making",
+        "Understand language | Natural language processing",
+        "Act | Robotics/control",
+        "Example 2: Self-driving car",
+        "A human driver",
+        "Sees a pedestrian → understands the situation → decides to brake.",
+        "An AI-based car:",
+        "Camera/sensors → AI analyzes surroundings → detects pedestrian → decides/action to brake."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        "AI in IoT",
+        "IoT acts as \"eyes and ears\" of AI by collecting real-time environmental data, while AI acts as \"brain\" that analyzes this information to make autonomous decisions",
+        "Integration of IoT-Enabled Technologies and AI for Smart City Scenario"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        "Frugal AI",
+        "Frugal AI intersection of 4 domains: economy, technology, society, and climate change.",
+        "In frugal innovation, AI is applied to create solutions that are accessible, affordable, and adaptable to resource-constrained environments.",
+        "“Understanding the concept of AI” and “Level of AI investment” as the two most influential success factors for AI adoption in sustainable frugal innovation",
+        "Concept of Frugal Artificial Intelligence aimed at reducing AI’s resource dependency while maintaining its effectiveness.",
+        "Reduction of data size, i.e., minimization of dataset(s) used in training, while preserving model accuracy.",
+        "Making AI eco-friendly, by reducing the energy involved in model training and use.",
+        "Minimization of needed resources, i.e., memory and/or processing/battery power”",
+        "Frugal AI: Introduction, Concepts, Development and Open Questions"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 18,
+      "title": "",
+      "content": [
+        "Characteristics of Frugal AI",
+        "Key principles of FAI",
+        "Efficiency",
+        "Affordability",
+        "Simplicity",
+        "Scalability"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 19,
+      "title": "",
+      "content": [
+        "Defining Efficiency in AI",
+        "Computational Efficiency",
+        "Algorithmic Efficiency",
+        "Operational Efficiency",
+        "Efficiency in AI is largely about optimization making sure that every computational resource is used to its fullest potential to achieve the desired outcomes",
+        "Key characteristics of frugality",
+        "Minimalism in Design",
+        "Accessibility and Affordability",
+        "Sustainable Innovation",
+        "Context-Aware Development",
+        "Frugality Terminology on AI: Lean AI, Sustainable AI, Green AI, Responsible AI"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 20,
+      "title": "",
+      "content": [
+        "Lean AI : Focuses on efficiency and simplification",
+        "Smaller models",
+        "Less computation",
+        "Faster inference",
+        "Reduced memory usage",
+        "Inspired by lean engineering/manufacturing principles.",
+        "Eliminate unnecessary complexity while maintaining performance.",
+        "Sustainable AI: Sustainable AI considers the long-term environmental and societal sustainability",
+        "Energy-efficient operation",
+        "Sustainable hardware usage",
+        "Long device lifetime",
+        "Reduced e-waste"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 21,
+      "title": "",
+      "content": [
+        "Green AI: Reducing the carbon footprint and energy consumption of AI.",
+        "Low-power hardware",
+        "Reduced training cost",
+        "Efficient inference",
+        "Carbon-aware computing",
+        "Responsible AI: Responsible AI focuses on the ethical, safe, fair, and trustworthy use of AI.",
+        "Fairness",
+        "Transparency",
+        "Privacy",
+        "Explainability",
+        "Reliability",
+        "Bias reduction",
+        "Concept | Main Focus",
+        "Lean AI | Computational efficiency",
+        "Green AI | Energy reduction",
+        "Sustainable AI | Long-term sustainability",
+        "Responsible AI | Ethics & trust",
+        "Frugal AI=Lean AI+Green AI+Sustainable AI+Responsible AI"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 22,
+      "title": "",
+      "content": [
+        "Distinguishing Frugality from Efficiency in AI",
+        "Efficiency focuses on optimizing performance metrics (such as speed, accuracy, and energy usage) within a given framework. The goal is to maximize output for any fixed level of resource input.",
+        "Frugality starts with the assumption that resources are scarce and seeks to develop solutions that are inherently low-cost and sustainable.",
+        "Efficiency improvements are often applied as optimizations to existing systems, such as refining algorithms or reducing computational overhead.",
+        "Frugal innovation involves rethinking the system from ground up, incorporating resource constraints into design process itself. This can lead to entirely new approaches that differ from traditional methods."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 23,
+      "title": "",
+      "content": [
+        "Frugal AI versus Traditional AI",
+        "A comprehensive review of frugal artificial intelligence: challenges, applications, and the road to sustainable AI"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 24,
+      "title": "",
+      "content": [
+        "Techniques for Frugal AI",
+        "Knowledge distillation",
+        "Teacher-Student Distillation",
+        "Self-Distillation",
+        "Multi-Teacher Distillation",
+        "Knowledge Distillation with Attention",
+        "Model optimization techniques",
+        "Bayesian Optimization",
+        "Quantization-aware Training",
+        "Model Distillation",
+        "Transfer learning",
+        "Fine-tuning",
+        "Domain Adaptation",
+        "Multi-task Learning",
+        "One-shot Learning",
+        "Machine learning algorithms",
+        "Decision Trees (DTs)",
+        "Random Forests (RFs)",
+        "Support Vector Machines",
+        "K-Nearest Neighbors",
+        "Regression",
+        "Pruning and compression",
+        "Weight Pruning",
+        "Filter Pruning",
+        "Quantization",
+        "Parameter Sharing",
+        "Data augmentation",
+        "Image Augmentation",
+        "Text Augmentation",
+        "Audio Augmentation",
+        "Synthetic Data Generation",
+        "Quantization",
+        "Fixed-point Quantization",
+        "Integer Quantization",
+        "Hybrid Quantization"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 25,
+      "title": "",
+      "content": [
+        "Case study: Frugal Internet of Things From Artificial Neural Network to Predict Student Mindfulness Concentration and Relaxation Levels",
+        "Indoor environmental quality significantly impacts student learning performance and efficiency. Studies indicate that indoor lighting highly affects student learning performance.",
+        "Warm color temperature (1000 K) is beneficial to learner's meditation, while a cold color temperature (7000 K) effectively enhances mindful attention.",
+        "In indoor environments, subjects better concentrated on with a higher CCT (Correlated Color Temperature) within a range of CCTs from 2700 to 5700 K.",
+        "A frugal Internet of Things (IoT) system to monitor student mindfulness concentration and relaxation levels at different CCTs.",
+        "Developed an Internet of Things (IoT) system, which consists of a DHT11 sensor for measuring indoor temperature, a WS2812B sensor for controlling indoor light, a TGAM (ThinkGear ASIC Module) module for measuring EEG, and a GSR (Galvanic Skin Response) sensor for detecting emotions.",
+        "**CCT measures color appearance of light",
+        "Developing Frugal Internet of Things From Artificial Neural Network to Predict Student Mindfulness Concentration and Relaxation Levels"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 26,
+      "title": "",
+      "content": [
+        "A frugal ANN-based system was developed to find relationships between CCT and student attention and meditation based on EEG and GSR data",
+        "Attention (ATT) and Meditation (MED) measured by TGAM"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 27,
+      "title": "",
+      "content": [
+        "They tested students under two CCT conditions:",
+        "Warm light: 2700 K",
+        "Cooler light: 5300 K",
+        "They found that cool CCT produced higher attention during the English typing tests.",
+        "What is the need?",
+        "Monitor student concentration and relaxation under different lighting.",
+        "What is the conventional expensive solution?",
+        "Sophisticated EEG/physiological monitoring and dedicated laboratory equipment.",
+        "What did they do instead?",
+        "Combine low-cost sensors, microcontrollers, and ANN."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 28,
+      "title": "",
+      "content": [
+        "Frugal AI Methods",
+        "Frugal Machine Learning for Energy-Efficient and Resource-Aware Artificial Intelligence"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 29,
+      "title": "",
+      "content": [
+        "A comprehensive review of frugal artificial intelligence: challenges, applications, and the road to sustainable AI"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 30,
+      "title": "",
+      "content": [
+        "Model Compression",
+        "Pruning: Remove unnecessary connections/weights from the model.",
+        "Knowledge Distillation: A large teacher model teaches a smaller student model.",
+        "Quantization: Use fewer bits, like 32-bit to 8-bit, to reduce memory and computation.",
+        "Frugal and Optimized Algorithms",
+        "Adaptive Model Utilization: Use different model sizes depending on the situation.",
+        "Zero Time Waste: Avoid unnecessary computation or processing.",
+        "Prototype-based Methods: Compare new data with representative examples instead of processing everything.",
+        "Data-Efficient Algorithms: Learn effectively using less training data.",
+        "Feature Selection",
+        "Filter Methods: Select features using simple statistical measures.",
+        "Wrapper Methods: Test different feature combinations and choose the best.",
+        "Embedded Methods: Feature selection happens during model training.",
+        "Hybrid Methods: Combine two or more selection methods.",
+        "Ensemble Feature Selection: Use several methods/models together to select important features."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 31,
+      "title": "",
+      "content": [
+        "Data Sampling",
+        "Undersampling: Reduce the number of training samples.",
+        "Data Selection: Select only the most useful samples.",
+        "Dataset Distillation: Create a very small dataset that retains the important information of a large dataset.",
+        "Hyperparameter Optimization",
+        "Neural Architecture Search: Automatically find a suitable neural-network structure.",
+        "Inverse Modeling: Work backward from desired performance to find suitable model settings.",
+        "Hardware-based methods",
+        "ML Accelerators: Special hardware designed specifically for AI operations.",
+        "Neuromorphic Hardware: Hardware inspired by brain using neurons/spikes.",
+        "Approximate Memory Architectures: Allow small computation/memory errors to save energy.",
+        "Model Adaptation: Change the model according to the available hardware resources."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 32,
+      "title": "",
+      "content": [
+        "Applications"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 33,
+      "title": "",
+      "content": [
+        "Role of Frugal AI in industry 4.0",
+        "Efficient Production",
+        "Quality Control",
+        "Supply Chain Management",
+        "Predictive Maintenance",
+        "Customer Engagement"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 34,
+      "title": "",
+      "content": [
+        "Challenges of Frugal AI",
+        "Lack of Data: Frugal AI often has to work in places where good-quality data is limited.",
+        "Frugal AI often needs to run on low-cost and resource-constrained devices, such as: Smartphones, Microcontrollers, Edge devices, Low-cost FPGA/embedded systems. These devices may have limited: CPU + Memory + Storage + Battery. So, a large AI model that works well on a GPU may not work on a small embedded device.",
+        "Evaluation Metrics and Benchmarks: A major issue is that conventional AI evaluation usually focuses heavily on accuracy. But for Frugal AI, accuracy alone is not enough. You should also ask: How much memory does it require? How much energy does it consume? How much does the hardware cost? How fast does it run? How much data is required? Can it run offline? Is it fair and private?",
+        "Security and Privacy: Frugal AI frequently uses edge devices and distributed devices, creating security and privacy challenges.",
+        "Ethical and Social Implications: Even if Frugal AI is cheap and efficient, is it safe and fair for society?"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 35,
+      "title": "",
+      "content": [
+        "Case study: Model involving IoT, AI, Entrepreneurial Knowledge (EK), and Frugal Innovation (FI)",
+        "IoT enables data collection, remote monitoring, and efficient resource use.",
+        "AI transforms IoT data into intelligent decisions.",
+        "Entrepreneurial Knowledge (EK) helps firms identify opportunities and effectively apply AI and IoT to create successful frugal innovations.",
+        "The combination of IoT + AI + EK leads to affordable, scalable, and sustainable solutions, particularly for resource-constrained environments",
+        "H1: IoT positively affects Frugal Innovation.",
+        "H2: AI positively affects Frugal Innovation.",
+        "H3: Entrepreneurial Knowledge strengthens the relationship between IoT and Frugal Innovation.",
+        "H4: Entrepreneurial Knowledge strengthens the relationship between AI and Frugal Innovation.",
+        "How to unleash frugal innovation through internet of things and artificial intelligence: Moderating role of entrepreneurial knowledge and future challenges"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 36,
+      "title": "",
+      "content": [
+        "Understanding concept of AI",
+        "Organization should have a basic understanding of AI, its capabilities, limitations, and possible applications.",
+        "Level of AI investment",
+        "How much the organization is willing and able to invest in AI-related resources",
+        "Relationship | Result",
+        "IoT → Frugal Innovation | β = 0.158",
+        "AI → Frugal Innovation | β = 0.248",
+        "EK × IoT → Frugal Innovation | β = 0.254",
+        "EK × AI → Frugal Innovation | β = 0.178",
+        "Company A",
+        "Has AI technology but poor entrepreneurial knowledge.",
+        "They may say:",
+        "“Let's buy an expensive AI system because everyone is using AI.”",
+        "Outcome: high cost, poor utilization.",
+        "Company B",
+        "Has the same AI technology but strong entrepreneurial knowledge.",
+        "They ask:",
+        "“What is the actual problem?”“Can we solve it with a smaller model?”“Can existing resources be reused?”“Can we use edge computing instead of cloud?”“What is the minimum technology required?”",
+        "Outcome: AI is converted into a frugal solution.",
+        "Context: Chinese small and medium-sized enterprises (SMEs)",
+        "Locations mentioned: Beijing, Shanghai, and Shenzhen",
+        "Focus: How SMEs use IoT and AI to support Frugal Innovation",
+        "Additional factor: Entrepreneurial Knowledge (EK) is examined as a moderator."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 37,
+      "title": "",
+      "content": [
+        "Frugal AI as a catalyst for smart hospitality",
+        "Hotels and hospitality companies are increasingly adopting IoT, AI, cloud computing, digital platforms, automation, data analytics.",
+        "These technologies can improve guest experience, operational efficiency, resource management, personalization, decision-making.",
+        "However, small and medium-sized hospitality businesses often cannot afford expensive AI infrastructure.",
+        "They may not have large computing systems, large datasets, highly skilled AI personnel, large technology budgets, sophisticated digital infrastructure.",
+        "Can hospitality organizations achieve smart services using AI with limited resources",
+        "Frugal AI as a catalyst for smart hospitality: Rethinking digital transformation in resource-constrained settings"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 38,
+      "title": "",
+      "content": [
+        "Hospitality has many activities where AI can be useful.",
+        "Guest services: AI can analyze guest feedback and identify common complaints.",
+        "Energy management: IoT sensors can detect room occupancy and help control energy use.",
+        "Predictive maintenance: AI can identify patterns indicating that equipment may need maintenance.",
+        "Demand forecasting: AI can predict changes in hotel occupancy.",
+        "Customer interaction: Lightweight AI chatbots can help answer guest questions.",
+        "Smart Hospitality means using connected, data-driven and adaptive technologies to improve hospitality services and operations.",
+        "IoT sensors",
+        "Collect data",
+        "AI analyses data",
+        "Manager gets information",
+        "Better decision",
+        "Better guest service / lower cost",
+        "A hotel becomes \"smart\" when technology helps it respond, adapt and make better decisions"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 39,
+      "title": "",
+      "content": [
+        "Technology–Organization–Environment (TOE) framework",
+        "T — Technology",
+        "Does the organization have technological foundation? Ex: IoT, digital transformation, infrastructure, data connectivity.",
+        "O — Organization",
+        "Is the organization capable of adopting the technology? Ex: Organizational readiness, AI capability, skills, leadership, resources, willingness to change.",
+        "E — Environment",
+        "What external factors are pushing the organization? Ex: Competition, customer expectations, sustainability pressure, regulations.",
+        "Variables",
+        "IoT: Does the organization have connected devices and systems that generate useful data?",
+        "Digital Transformation: How deeply has digital technology been integrated into the organization?",
+        "Frugal AI: Does the organization use affordable, lightweight and resource-efficient AI?",
+        "Smart Hospitality: Does technology improve hospitality services and operations?",
+        "Organizational Readiness: Is the organization prepared to adopt and use new technology?"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 40,
+      "title": "",
+      "content": [
+        "Study Analysis",
+        "In Study 1, the researchers collected semi-structured interview data from 53 participants. The participants included as Hospitality managers, Academics/researchers, Policymakers, PhD researchers/students, Other stakeholders familiar with AI, IoT, and digital transformation. The interviews explored their experiences, perceptions, and views about Frugal AI, IoT, digital transformation, organizational readiness, AI capability, and Smart Hospitality.",
+        "In Study 2, they collected survey data from 509 valid respondents. The questionnaire used a 5-point Likert scale, where respondents indicated their level of agreement with statements related to the study constructs. They measured constructs such as: IoT, Digital Transformation, Frugal AI, Organizational Readiness, AI Capability, Smart Hospitality.",
+        "Support Hypothesis",
+        "More IoT adoption should lead to greater Frugal AI implementation.",
+        "Organizations with greater digital transformation should be more capable of implementing Frugal AI",
+        "Organizational Readiness moderates IoT            Frugal AI",
+        "Digital transformation is more effective when the organization is ready to use it.",
+        "If Frugal AI increases, Smart Hospitality outcomes improve.",
+        "Frugal AI is more effective when the organization has stronger AI capability."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 41,
+      "title": "",
+      "content": [
+        "Frugal Machine learning (FML)",
+        "FML aims to make AI more accessible and sustainable, particularly in resource constrained environments such as smart environments, IoT systems, and embedded platforms.",
+        "FML emphasizes reducing costs associated with data, computation, and time while maintaining model performance across various ML tasks. TinyML is designed for ultralow-power devices like micro-controllers and edge devices, optimizing models for minimal memory, processing power, and energy consumption. FML is broader and cost driven, while TinyML is specialized for small, resource-limited hardware platforms."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 42,
+      "title": "",
+      "content": [
+        "Case study: Frugal Object Detection Models",
+        "Object detection is a fundamental task in computer vision that involves both identifying objects and determining their precise locations within images or video frames.",
+        "Frugal Object Detection Models: Solutions, Challenges and Future Directions"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 43,
+      "title": "",
+      "content": [
+        "Traditional object detection relied on hand-crafted features combined with classical machine learning classifiers.",
+        "With the advent of deep learning, convolutional neural networks (CNNs) revolutionized object detection by enabling end-to-end feature extraction and classification.",
+        "Standard Datasets for Object Detection database: 1) COCO Dataset, 2) PASCAL VOC Dataset, 3) Tiny-ImageNet and Custom Edge AI Datasets",
+        "CNN-Based Lightweight Models remain a dominant approach for object detection, with various lightweight models optimized for frugality.",
+        "YOLOv5-Nano: A compact version of YOLOv5 designed for edge computing with reduced parameters and FLOPs",
+        "YOLOv8-Nano: Further improvements in detection speed and accuracy while maintaining a low computational footprint.",
+        "LeYOLO: Lightweight-energy variant of YOLO designed for embedded AI applications",
+        "Trade-Offs Between Model Complexity and Performance",
+        "Frugal object detection requires balancing model complexity with detection accuracy.",
+        "Model Size vs. Accuracy: Reducing parameters improves efficiency but may degrade performance.",
+        "Inference Speed vs. Computational Cost: Lightweight models run faster but may sacrifice precision in object localization.",
+        "Feature Extraction Depth: Shallow networks require less computation but may struggle with detecting small or overlapping objects."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 44,
+      "title": "",
+      "content": [
+        "Comparison of Hardware-Specific Optimizations for Frugal Object Detection",
+        "Certain hardware platforms are designed to efficiently run lightweight object detection models. These platforms provide dedicated AI acceleration, optimizing real-time processing for edge applications."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 45,
+      "title": "",
+      "content": [
+        "Advantages and Challenges"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 46,
+      "title": "",
+      "content": [
+        "Summary",
+        "What level of model complexity is needed?",
+        "Can a model be retrained or can frugality be only applied on a pretrained model?",
+        "Should a specific hardware setup be considered?",
+        "What is an acceptable computational cost of model compression?",
+        "What metric(s) demonstrate frugality of the model?",
+        "Practical Considerations for Deploying Frugal AI in the IoT-Edge-Cloud Continuum"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 47,
+      "title": "",
+      "content": [
+        "An IoT device needs to operate for one year using a small battery. Which approach is most frugal?A. Continuous data transmissionB. High-frequency sensingC. Event-based sensing and transmissionD. Maximum processor speed",
+        "If an IoT application requires only occasional measurements, which strategy is most appropriate?A. Continuous sensingB. Periodic/event-driven sensingC. Maximum-resolution sensingD. Continuous cloud transmission",
+        "In a remote IoT system, sending raw sensor data to the cloud consumes significant energy. Which approach is most suitable for frugal design?A. Increase transmission frequencyB. Perform local data processing and transmit only relevant informationC. Increase packet size without processingD. Use a higher-performance processor",
+        "An IoT device has limited memory and processes a large sensor dataset. Which technique can reduce memory requirements while retaining useful information?A. Data compressionB. Increasing sampling rateC. Increasing word lengthD. Adding more sensors"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 48,
+      "title": "",
+      "content": [
+        "5. A frugal IoT system should primarily optimize:A. Hardware cost onlyB. Performance onlyC. Cost, energy, reliability, and required functionalityD. Number of sensors",
+        "6. In Frugal IoT, reducing the number of unnecessary sensors mainly represents:",
+        "A. Minimalism in designB. Reverse innovationC. Knowledge distillationD. Artificial intelligence",
+        "7. Which situation is NOT necessarily Frugal IoT?",
+        "A. Reusing an existing smartphone as an IoT gatewayB. Using a low-power microcontroller for a simple sensing taskC. Using 100 sensors for a problem that requires only 5 sensorsD. Processing data locally to reduce cloud communication",
+        "8. A rural IoT system cannot depend on continuous internet connectivity. Which architecture is MOST appropriate?",
+        "A. Cloud-first architecture with continuous raw-data transmissionB. Local/edge processing with occasional transmission of important resultsC. Continuous video streaming to the cloudD. High-bandwidth communication infrastructure"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 49,
+      "title": "",
+      "content": [
+        "A remote village needs an IoT-based water-level monitoring system. The system should be low-cost, consume little power, and operate in an area with limited connectivity. Identify the RCA of the existing system's problems, list the key constraints, and propose a Frugal IoT solution. Draw the block diagram of your proposed system.",
+        "A company wants to manufacture an IoT device locally using off-the-shelf components, open-source hardware, and 3D-printed parts. Design a suitable Frugal IoT architecture and explain the cost-saving approach."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 50,
+      "title": "",
+      "content": [
+        "1. A traditional AI model achieves 98% accuracy using 100 features. A frugal model achieves 95% accuracy using only 20 features. Which statement best describes frugal approach?",
+        "A. The frugal model is always better because its accuracy is lowerB. The traditional model is always better because its accuracy is higherC. The frugal model trades a small amount of accuracy for significantly lower resource consumptionD. The frugal model is not an AI model",
+        "2. Which combination is most closely associated with Frugal AI?",
+        "A. Large model + maximum computation + cloud-only processingB. Adaptive computation + model compression + efficient hardwareC. More sensors + larger datasets + deeper networksD. Maximum accuracy + maximum memory",
+        "3. Which technique directly reduces the numerical precision used for storing and computing model parameters?",
+        "A. Data augmentationB. QuantizationC. Transfer learningD. Knowledge distillation"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 51,
+      "title": "",
+      "content": [
+        "4. Which statement about Frugal AI is most accurate?",
+        "A. Frugal AI always means using the smallest possible modelB. Frugal AI always sacrifices accuracyC. Frugal AI seeks an appropriate balance between performance and resource consumptionD. Frugal AI is only applicable to smartphones",
+        "5. Which equation best represents the fundamental idea of Frugal AI?",
+        "A. Performance : MaximumB. Resource consumption : MaximumC. Performance : Sufficient and Resource consumption : MinimumD. Model size : Minimum",
+        "6. A company develops an AI product with many features that users never need. From a frugal perspective, the main problem is:",
+        "A. Lack of innovationB. Excessive use of resources for unnecessary functionalityC. Insufficient dataD. Lack of automation",
+        "7. Which of the following is a key characteristic of a frugal AI solution?",
+        "A. High costB. High complexityC. AccessibilityD. Maximum resource consumption"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 52,
+      "title": "",
+      "content": [
+        "A rural health center wants to develop a low-cost AI system to identify whether a patient's chest x-ray is normal or abnormal. The center has limited computing power, limited storage, unreliable internet, limited budget, only a small local dataset. Design a block-level frugal AI system that can provide the prediction with minimum computational and hardware requirements.",
+        "A rural healthcare center needs a low-cost remote patient-monitoring system. The system should collect vital signs using IoT sensors, use AI to identify abnormal conditions, and operate with limited cost, power, and connectivity. Design a block-level architecture showing how IoT, AI, Entrepreneurial Knowledge (EK), and Frugal Innovation (FI) are connected.",
+        "Temperature Sensor",
+        "↓",
+        "Data Collection",
+        "↓",
+        "Cloud Upload",
+        "↓",
+        "Cloud Processing",
+        "↓",
+        "Compare with Threshold",
+        "↓",
+        "Send Alert",
+        "3. Which step can be removed for frugal solution"
+      ],
+      "notes": ""
+    }
+  ]
+}

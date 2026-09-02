@@ -1,0 +1,157 @@
+{
+  "source_file": "L8_overengineering and FI.pptx",
+  "topics": [
+    "over-engineering",
+    "frugal innovation",
+    "frugal engineering",
+    "emerging markets affordability",
+    "developed markets value for money",
+    "sustainability and enoughness",
+    "durability longevity reuse recyclability",
+    "organizational causes of overengineering",
+    "individual company and process reasons",
+    "customer-needed performance levels",
+    "top-down and bottom-up requirement checks",
+    "Timo Achtelik",
+    "Volkswagen polymer materials case study",
+    "TUHH Institute for Technology and Innovation Management action research",
+    "secondary polymer materials and sustainable material concepts",
+    "system orientation in automotive material development",
+    "smart water tank IoT frugal architecture",
+    "frugal food delivery village service model"
+  ],
+  "summary": "The deck explains the problem of over-engineering—products with excessive features, performance, complexity, and cost—and argues for frugal innovation as a response driven by affordability, value consciousness, and sustainability. It examines causes of overengineering at individual, organizational, and process levels, presents research and a Volkswagen/TUHH case study on polymer material specifications in automotive development, and includes practical design exercises on a smart water tank and a rural food delivery service.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Over-Engineering and Frugal Solution"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Why frugal innovation is becoming important and what research gaps still exist",
+        "Problem of Over-Engineering",
+        "Many companies design products with:",
+        "Too many features",
+        "Excessive performance",
+        "High complexity",
+        "High cost",
+        "This is called over-engineering.",
+        "Examples:",
+        "Expensive cars with features customers rarely use.",
+        "Products designed for \"best possible performance\" rather than \"needed performance\".",
+        "Over-Engineering is a Problem?",
+        "a) Emerging Markets",
+        "Customers have lower purchasing power.",
+        "They need affordable and simple products.",
+        "Over-engineered products become difficult to sell.",
+        "b) Developed Markets",
+        "Even wealthy customers increasingly want value for money.",
+        "Economic uncertainties, inflation, and rising living costs make customers more price conscious."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Over-engineering also wastes:",
+        "Materials",
+        "Energy",
+        "Resources",
+        "Modern sustainability focuses on \"enoughness\" rather than \"more and better.\"",
+        "Therefore companies should:",
+        "Reduce unnecessary features.",
+        "Use fewer resources.",
+        "Increase durability and longevity.",
+        "Encourage reuse and recyclability.",
+        "X  How can we make the product more advanced?",
+        "Ask: What performance level is actually needed by customers?",
+        "Frugal Mindset"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "What organizational factors cause over-engineering?",
+        "Can frugal engineering help reduce over-engineering?",
+        "Timo Achtelik \"Frugal Engineering Challenging Performance-Improving Paradigms in the Context of Automotive Material Development\""
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Case Study: Over-Engineering and Frugal Innovation in Polymer Materials",
+        "The study was conducted at Volkswagen, within the department of Polymers Material Engineering, part of the broader technical development division. The organization is facing increasing challenges in developing sustainable secondary polymer materials.",
+        "A collaboration was established between Volkswagen and the Institute for Technology and Innovation Management (TIM), Hamburg University of Technology (TUHH) as a three-year action research project (starting February 2021).",
+        "The collaboration was motivated by growing interest in frugal and sufficiency-oriented innovation approaches.",
+        "Research Objectives",
+        "Identify over-engineered material specifications",
+        "Develop a method to reduce excessive performance requirements",
+        "Enable integration of sustainable material concepts",
+        "Core Problem",
+        "Material performance",
+        "Over-engineered specifications",
+        "Technical requirements",
+        "Systemic Issue in Innovation culture"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Why Does Overengineering Happen?",
+        "Individual Reasons: Sometimes, it's about people being too cautious or resistant to change. They might be afraid to lower specifications because they see the current high standards as 'safer’.",
+        "Company Reasons: This involves a company culture that always strives for perfection, a shared belief that they must always be 'quality-driven,' and a focus on making only the highest-quality products",
+        "Process Reasons: Lack of proper tools or methods to set different requirements for different applications. The development teams might stick to old habits",
+        "Solution",
+        "Focusing on True Needs: Instead of just copying old, high standards, engineers should look at what the product really needs to do for its specific case",
+        "Two-Way Check:",
+        "Top-Down: Start from what the customer needs and then figure out the exact material requirements.",
+        "Bottom-Up: Continuously question if lower-level material requirements are more than what's actually needed for the overall system to work.",
+        "System Orientation as an Enabler for Sustainable Frugal Engineering: Insights from Automotive Material Development"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Smart Water Tank",
+        "A hostel wants an IoT-based water tank monitoring system. A team proposes:",
+        "5 water-level sensors",
+        "Continuous cloud data transmission",
+        "Camera-based water-level estimation",
+        "AI prediction of water consumption",
+        "Mobile app with real-time graphs",
+        "Automatic pump control",
+        "Battery backup",
+        "GPS tracking of the tank",
+        "However, the actual requirement is only to detect when the tank is nearly empty or full and control the pump.",
+        "Question: Identify the over-engineered components and propose a frugal system architecture."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "Frugal Food Delivery",
+        "A startup wants to provide food delivery in a small village. The proposed service includes:",
+        "Mobile App → Online Payment → GPS Tracking → Cloud Platform → Delivery Optimization → Dedicated Delivery Fleet. There are only 20–30 orders per day.",
+        "Question:Design a frugal service model that can deliver the food reliably without developing an expensive technology."
+      ],
+      "notes": ""
+    }
+  ]
+}

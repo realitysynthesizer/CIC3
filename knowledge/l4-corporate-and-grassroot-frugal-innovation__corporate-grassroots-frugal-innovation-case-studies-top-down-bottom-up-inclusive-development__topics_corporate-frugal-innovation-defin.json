@@ -1,0 +1,317 @@
+{
+  "source_file": "L4_Corporate and Grassroot Frugal Innovation.pptx",
+  "topics": [
+    "corporate frugal innovation definition",
+    "target customer needs analysis and feature elimination",
+    "low-income markets and affordability-profitability balance",
+    "Mettler Toledo Entry line entry-level laboratory instruments",
+    "Accor Ibis Budget hotel chain frugal service design",
+    "cannibalization within multi-brand hotel portfolios",
+    "Local Motors microfactory model",
+    "open-source design and crowdsourced vehicle development",
+    "Fairwaves low-cost GSM base station",
+    "Osmocom GSM Network-in-a-Box and remote management",
+    "frugal innovation in developed countries: Braigo, BrickPi, Foldscope",
+    "grassroots frugal innovations and Jugaad",
+    "corporate vs grassroots frugal innovation comparison top-down vs bottom-up",
+    "drawbacks and limitations of grassroots and corporate frugal innovation",
+    "polycentric innovation and frugal innovation for inclusive development"
+  ],
+  "summary": "This deck contrasts corporate and grassroots frugal innovation, explaining how firms and communities create affordable solutions under resource constraints through top-down and bottom-up approaches. It uses case studies including Mettler Toledo, Accor Ibis Budget, Local Motors, Fairwaves, Braigo, BrickPi, and Foldscope to show cost reduction, standardization, open innovation, and local problem-solving. The deck also discusses cannibalization, the limits of each approach, polycentric innovation, and the role of frugal innovation in inclusive development, poverty reduction, and social impact.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Corporate and Grassroot Frugal Innovation",
+        "Companies realized that billions of low-income people can also be customers. Selling affordable products to this large market can become a profitable business.",
+        "Companies can do two things together",
+        "Earn money",
+        "Help poor people access useful products",
+        "Example: A low-cost medical diagnostic device can improve healthcare while generating revenue.",
+        "Companies first choose a target customer group and then design products specifically for their needs.",
+        "Companies study customers carefully.",
+        "Questions include:",
+        "What do they really need?",
+        "What can they afford?",
+        "Which features are important?",
+        "After understanding customers, companies remove features that are not necessary and reduces cost.",
+        "The main reason companies pursue frugal innovation is business growth. Companies earn less profit on each product.",
+        "Corporate frugal innovation is the art of delivering only what customers truly need, at the lowest possible cost, without compromising quality.",
+        "Corporate Frugal Innovation: Deliver affordable, high-quality, profitable products through systematic engineering and large-scale production.",
+        "Corporate and Grassroot Frugal Innovation: A Comparison of Top-Down and Bottom-Up Strategies"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Case study 1: Mettler Toledo Entry line",
+        "Mettler Toledo is a company that makes high-quality laboratory instruments such as:",
+        "Weighing balances",
+        "Analytical instruments",
+        "Laboratory equipment",
+        "Their products are usually expensive and premium.",
+        "However, many low-cost companies started selling cheaper alternatives.",
+        "Mettler Toledo followed a structured process-",
+        "Identify threat",
+        "Low-cost competitors entering the market.",
+        "Understand customers",
+        "What can they afford?",
+        "What features do they need?",
+        "Simplify product",
+        "Remove unnecessary features.",
+        "Maintain quality",
+        "Protect the company brand.",
+        "Reduce manufacturing cost",
+        "Low-cost sourcing.",
+        "Adjust marketing",
+        "Target new customer segments.",
+        "Mettler Toledo decided to develop an entry-level product line",
+        "Example",
+        "Premium Version",
+        "Touchscreen",
+        "Advanced analysis",
+        "Multiple communication ports",
+        "High precision options",
+        "Entry Version",
+        "Basic weighing",
+        "Simple display",
+        "Essential functions only",
+        "Frugal line clearly matches the overall brand image"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Case study 2: Accor Ibis Budget hotel chain",
+        "Accor noticed a market opportunity.",
+        "There were many traveling salespeople who",
+        "Had limited budgets.",
+        "Needed a clean and comfortable place to sleep.",
+        "Often arrived late at night.",
+        "Did not need luxury facilities.",
+        "Traditional hotels were too expensive, while very cheap hotels often had poor quality.",
+        "Customer needs a",
+        "Clean room",
+        "Comfortable bed",
+        "Easy access",
+        "Safe accommodation",
+        "Affordable price",
+        "Focus on essential customer needs and eliminate non-essential features.",
+        "How did they reduce costs?",
+        "Strategic location selection",
+        "Simple but good quality rooms",
+        "Automated check-in",
+        "Standardized rooms"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "What challenge did Accor face?",
+        "A problem called cannibalization.",
+        "Example:",
+        "Suppose a customer normally stays in an expensive Accor hotel.",
+        "During an economic slowdown:",
+        "The customer shifts to Ibis Budget (low-cost hotel brand owned by Accor).",
+        "Accor loses revenue from its premium hotel.",
+        "Why was cannibalization also beneficial?",
+        "Without Ibis Budget:",
+        "Customer → Leaves Accor → Goes to a competitor.",
+        "With Ibis Budget:",
+        "Customer → Stays within Accor's hotel portfolio.",
+        "So although Accor earns less money from that customer, it still retains the customer.",
+        "Ibis Budget case demonstrates that successful corporate frugal innovation is about:",
+        "Understanding a specific customer group.",
+        "Identifying only their essential needs.",
+        "Eliminating unnecessary features.",
+        "Using standardization and automation to reduce costs.",
+        "Maintaining acceptable quality and brand reputation."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Case Study 3: Local Motors Microfactory",
+        "Local Motors is an American automotive company that introduced a microfactory model for designing and manufacturing vehicles. Instead of relying on large, centralized factories, it uses small, local production facilities supported by open innovation and crowdsourcing.",
+        "Key Features",
+        "Open-source design: Vehicle designs are created and improved by a global online community of engineers, designers, and enthusiasts.",
+        "Crowd-powered innovation: Ideas and designs come from thousands of contributors rather than only an in-house R&D team.",
+        "Microfactory concept: Small manufacturing units located close to customers reduce transportation costs and enable localized production.",
+        "Maker spaces: Microfactories also function as innovation hubs where students, inventors, and local communities can collaborate.",
+        "Local Motors Rally Fighter sportscar",
+        "Achievements",
+        "High-performance sports car with high degree of flexibility.",
+        "Reduced development time from about 60 months to 18 months.",
+        "Reduced development cost from around US$1 billion to about US$3 million."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Case Study 4: Fairwaves – Low-Cost GSM Base Station",
+        "Fairwaves is a startup originating from Neuron Hackspace (Moscow) that develops low-cost GSM base stations for affordable mobile communication, particularly in low-income and rural regions.",
+        "Key Features",
+        "GSM Network-in-a-Box (NITB) solution.",
+        "Base station cost: ~US$5,000 (compared to millions for conventional telecom infrastructure).",
+        "Low power consumption: Approximately 100 W.",
+        "Coverage: Up to 10 km radius.",
+        "Built using the open-source Osmocom GSM software stack.",
+        "Managed remotely using a standard laptop.",
+        "Frugal Engineering Principles",
+        "Low-cost infrastructure for telecommunications.",
+        "Open-source software reduces development and licensing costs.",
+        "Energy-efficient design with minimal power requirements.",
+        "Scalable architecture from a single base station to nationwide deployment.",
+        "Affordable connectivity, enabling mobile services for about US$1–2 per month.",
+        "Fairwaves GSM base station",
+        "Fairwaves demonstrates how frugal engineering can dramatically reduce the cost and complexity of mobile communication infrastructure, making telecommunications accessible in resource-constrained regions."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Frugal innovation in developed world",
+        "Briago braille printer (braigolabs.com): Young inventor Shubham Banerjee used the Lego Mindstorms EV3 kit($349) and a few parts from a hardware store to create a Braille printer that costs just $350 (compared to$2000 for a conventional machine).",
+        "BrickPi Bookreader: Invented by John Cole, BrickPi scans the pages of physical books. His digitizer uses the $30 Raspberry Pi computer, and overall costs $450 compared to $16000 for conventional equipment.",
+        "Foldscope (foldscope.com). Foldscope is a 2,000X magnification optical microscope that can be printed, cut, and assembled from a flat sheet of paper for less than $1.",
+        "In each of the cases, the goals are environmental, social, or economic to various degrees, but each case has used ingenious ways to address the challenges of limited resources and turn them into an advantage."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "Grassroots Frugal Innovations (GFIs)",
+        "Grassroots Frugal Innovations (GFIs) are low-cost solutions developed by ordinary people or local communities to solve everyday problems using locally available resources. They are the oldest form of frugal innovation and originated mainly in India and China.",
+        "Jugaad – The beginning of GFIs",
+        "GFIs are the foundation of frugal engineering.",
+        "Although GFIs often lack formal education, advanced technology, funding, and engineering support, they are able to develop innovative products through creativity, practical experience, problem-solving ability, hard work.",
+        "Grassroots innovators can achieve much more if they receive better education, access to scientific and engineering knowledge, financial assistance, technical guidance, affordable research facilities",
+        "A Jugaad coffee-maker for serving delicious cappuccino"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        "Differences between corporate versus grassroot frugal innovation",
+        "Category | Corporate Frugal | Grassroot Frugal",
+        "Driver | Companies | Individual inventors who are part of or close to the target group",
+        "Impulse | Market opportunity | Clever idea to solve a problem",
+        "Target | High profitability targeted | Low economic profitability accepted",
+        "Quality | In line with brand | Good enough for target customers",
+        "Production Scale | Mass manufacturing | Single items and small series",
+        "Development Process | Complex, resource-intensive | Simple, resource-restricted",
+        " | Structured, method-based | Improvised",
+        " | Elaborate prototypes | Early, fast, frequent prototyping",
+        "Success Factors | Dedicated corporate R&D teams, close collaboration with customers | Input from other designers, collaborative/crowd design",
+        "Challenges | Cannibalization of existing offerings; brand damage | Upscaling"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        "Relationship in corporate versus grassroot frugal innovation",
+        "Top-Down Innovation:",
+        "Experts create solutions for people.",
+        "Bottom-Up Innovation:",
+        "People create solutions for themselves."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        "Drawbacks of Grassroots Frugal Innovations",
+        "Lack of scientific foundation",
+        "Poor reliability and short lifespan: Fail prematurely, wear out quickly, require frequent repairs.",
+        "Limited quality and performance : Performance may not be consistent across different operating conditions.",
+        "Not suitable for critical applications: Sectors such as healthcare, defense, aerospace",
+        "Limited market acceptance: Quality, reliability, durability",
+        "Limitations of Corporate Frugal Innovation",
+        "Limited community participation",
+        "Profit-driven objectives",
+        "May overlook social inequalities",
+        "Not always affordable for the poorest",
+        "Less adaptable to local needs",
+        "Users are consumers, not co-creators",
+        "Dependent on company support"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        "Which innovation approach is likely to produce a more reliable medical device. Corporate or Grassroots Frugal Innovation? Explain your reasoning.",
+        "Can a Grassroots Frugal Innovation become a Corporate Frugal Innovation? Explain with an example.",
+        "Under what conditions would a bottom-up approach be more effective than a top-down approach?"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        "Polycentric Innovation",
+        "Earlier corporate versus grassroot frugal innovation worlds rarely interacted.",
+        "Large Companies",
+        "Collaborate",
+        "Local Innovators",
+        "The main reason is that companies realized that simply selling cheaper versions of existing products is not enough.",
+        "Now",
+        "Polycentric Innovation:",
+        "Innovation created through collaboration among multiple regions, organizations, and stakeholders, where no single company or country could develop the complete solution alone.",
+        "Multinational companies enter informal markets",
+        "NGOs and social entrepreneurs help scale local innovations",
+        "Local innovators collaborate with corporations",
+        "Risks: Large companies may dominate the market, exploit local knowledge, copy ideas, reduce opportunities for local businesses"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        "Frugal Innovation and Development Research",
+        "Can frugal innovation contribute to economic development, poverty reduction, and inclusive growth, especially in developing countries?",
+        "Frugal innovation should not be viewed only as low-cost product development. It is a much broader concept involving technology, business models, institutions, entrepreneurship, and social inclusion.",
+        "Frugal Innovation as Business Innovation",
+        "Frugal innovation is viewed from a business perspective. Companies develop products that are Affordable, Good quality, Resource efficient for emerging markets.",
+        "Frugal Innovation and Development Research, 2017"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        "Frugal Innovation as Inclusive Development",
+        "Frugal emphasize poverty reduction, employment, access to healthcare, access to energy, education",
+        "Frugal Innovation as a Combination of Top-down and Bottom-up Innovation",
+        "Top-down innovation is driven by large corporations adapting products for new markets, whereas bottom-up innovation originates from grassroots communities solving immediate local problems",
+        "Frugal Innovation is More Than Cheap Products",
+        "Frugal innovation should include new business models, new delivery systems, institutional innovation, social innovation, entrepreneurship, local capability building"
+      ],
+      "notes": ""
+    }
+  ]
+}

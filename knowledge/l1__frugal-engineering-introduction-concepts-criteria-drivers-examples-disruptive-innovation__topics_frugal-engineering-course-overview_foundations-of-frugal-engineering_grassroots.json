@@ -1,0 +1,319 @@
+{
+  "source_file": "L1.pptx",
+  "topics": [
+    "frugal engineering course overview and assessment",
+    "foundations of frugal engineering",
+    "grassroots innovation and jugaad",
+    "reverse innovation and advanced frugal innovations",
+    "engineering frugality heuristics for frugal services",
+    "sustainability and triple bottom line",
+    "frugal applications in AI IoT electronics biomedical",
+    "frugal entrepreneurship quality reliability validation",
+    "definition of frugal innovation and three defining criteria",
+    "Tata Nano GE Vscan and GE MAC 400 case studies",
+    "India innovation legacy Kerala School of Mathematics and Delhi Iron Pillar",
+    "frugal vs conventional innovation comparison",
+    "constraint-based innovations Gandhian catalytic indigenous grassroots",
+    "myths misconceptions and non-examples of frugal innovation",
+    "drivers of frugal innovation and disruptive innovation Christensen"
+  ],
+  "summary": "This deck introduces the Frugal Engineering course, including assessment, learning outcomes, references, and the broad syllabus spanning foundations, sustainability, applications, entrepreneurship, validation, and case studies. It explains what frugal innovation is and is not, contrasts it with conventional innovation, outlines core criteria and drivers, and situates it among related concepts such as Jugaad, grassroots, Gandhian, catalytic, indigenous, and reverse innovation. The slides also present examples and non-examples, Indian historical context, sustainability links, and the relationship between frugal and disruptive innovation using cases like Tata Nano, GE Vscan, GE MAC 400, Mitticool, Jaipur Foot, Aravind Eye Care, and Grameen Bank.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Frugal Engineering (EP60044)",
+        "Marks distribution",
+        "Teacher’s Assessment =40%",
+        "Exam (Mid+End) =30%+30%",
+        "Presented by",
+        "Dr. Biswabandhu Jana",
+        "Assistant Professor, RMSoEE"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Course contents",
+        "Foundations of Frugal Engineering; Grassroots Innovation, Jugaad, Reverse Engineering and Advanced Frugal Innovations; Engineering Frugality; Heuristics for Frugal Services; Sustainability; Application Area: AI, IoT, Electronics, and Biomedical; Frugal Entrepreneurship; Quality, Reliability and Validation; Case Studies; Design Project and Technical Presentation.",
+        "Expected Outcomes",
+        "Upon successful completion of the course, students will be able to understand the principles of frugal engineering, apply frugal design methods to develop resource-efficient products, evaluate engineering solutions based on cost, quality, reliability, and sustainability, utilize AI, electronics, and modern technologies in frugal product development, design affordable and sustainable solutions for real-world challenges, and develop and present a frugal engineering product or prototype.",
+        "References",
+        "Timo Achtelik, Frugal Engineering Challenging",
+        "Balkrishna C. Rao, Frugal Engineering Advent, Design and Production of Frugal Products"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "What is Frugal Engineering?",
+        "The process of reducing the complexity and cost of a goods and its production.",
+        "Frugal innovation can be interpreted as a mindset or a way of life, as a process, and as an outcome in the form of products or services.",
+        "Key Distinction: It is NOT just cost-cutting. It is about maximizing value while minimizing resources without sacrificing essential quality.",
+        "Quote: \"Frugality is the mother of invention.\"",
+        "Well-known examples include the Tata Nano and pocket-sized Ultrasound device GE Vscan",
+        "What is frugal innovation? Three defining criteria, Journal of Frugal Innovation, 2016"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "India's Legacy of Innovation",
+        "Kerala School of Mathematics developed concepts related to calculus centuries before Europe.",
+        "Delhi Iron Pillar",
+        "Built around the 3rd–4th century AD.",
+        "Famous for its remarkable resistance to rust.",
+        "From Ancient Innovation to Frugal Engineering: Efficient use of resources, scientific understanding, practical problem-solving, durable and reliable solutions"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "What differentiates frugal innovation from other innovation types?",
+        " | Frugal Innovation | Conventional Innovation",
+        "Objective | Affordability and accessibility | Performance, features, and profitability",
+        "Customers | Price-sensitive and resource-constrained users | Mainstream or premium customers",
+        "Resource use | Minimal materials, energy, and cost | Higher resource consumption is acceptable",
+        "Design | Simplicity and essential functionality | Feature-rich and technologically advanced",
+        "Innovation | Cost reduction through smart engineering and process optimization | New technologies and enhanced performance",
+        "Approach | Do more with less | Do more with more",
+        "Sustainability* | Strong emphasis on resource efficiency and environmental impact | Sustainability may be secondary",
+        "*Sustainability means meeting today's needs without harming the ability of future generations to meet theirs."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Why Frugal Engineering Matters Today"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Characteristics of frugal innovations",
+        "Sophistication, sustainability, and emerging market orientation: Frugal innovation has low to medium sophistication, medium sustainability, and medium emerging market orientation.",
+        "Technical novelty and market novelty: Higher technical and market novelty than good-enough innovation and cost innovation",
+        "Frugal innovation",
+        "Driver: What do they need",
+        "Process: Bottom-up",
+        "Core capabilities: Functionality (rugged, lightweight, adaptable, simple)",
+        "Location: Developing markets.",
+        "Conventional innovation",
+        "Driver: What would be nice to have",
+        "Process: Top-down",
+        "Core capabilities: Desirability and design",
+        "Location: Developed markets."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "Constraint-Based Innovations",
+        "Innovation Type | Main Question",
+        "Grassroots | Who created it?",
+        "Indigenous | Where did the knowledge come from?",
+        "Frugal | How can we reduce cost?",
+        "Gandhian | Who is it for?",
+        "Catalytic | What is the impact?",
+        "Innovation Type | Simple Meaning | Main Focus | Who Innovates | Real-Life Example",
+        "Jugaad | A quick, improvised solution using whatever is available. | Solve an immediate problem at very low cost. | Individual | Farmer using a motorcycle engine to power a water pump.",
+        "Frugal Innovation | A systematically designed product or service that is affordable, reliable, and resource-efficient. | High value with minimum resources. | Company/Engineer | GE MAC 400 portable ECG, Tata Nano, Jaipur Foot.",
+        "Gandhian Innovation | Uses local resources, local skills, and appropriate technology for serving poorest. | Self-reliance and community development. | Community | Amul dairy cooperative, SELCO Solar.",
+        "Catalytic Innovation | A low-cost innovation that changes an entire system and reaches underserved people. | Large-scale social transformation. | Organization | Aravind Eye Care, Grameen Bank.",
+        "Grassroots Innovation | Ideas developed by ordinary people based on local needs and experience. | Bottom-up innovation from communities. | Ordinary People | Mitticool clay refrigerator, Bullet Santi",
+        "Indigenous Innovation | Innovation developed using local knowledge, culture, and traditional practices. | Local solutions using indigenous knowledge. | Local Communities | Traditional bamboo water pipes in Meghalaya, herbal medicines based on Ayurveda.",
+        "Reverse Innovation | Products developed first for emerging markets and later adopted in developed countries. | Innovation flows from developing to developed countries. | Companies | GE handheld ECG (MAC 400), GE Lullaby Baby Warmer."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        "What Frugal Does Not Mean",
+        "Cost improvement by only a few percent.",
+        "Cost reduction without evaluating what functionalities and performance levels are actually required.",
+        "Product modification of existing products and services without questioning which functionalities are truly needed.",
+        "Product improvement without challenging the performance level actually required for the intended purpose."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        "Some Right/Wrong concepts (myths) about frugal engineering",
+        "Concepts | True/False",
+        "Frugal engineering means making cheap products. | F",
+        "Frugal products are low quality. | F",
+        "Frugal engineering is only for poor countries. | F",
+        "Frugal engineering only focuses on reducing cost. | F",
+        "Frugal innovation means cutting features. | F",
+        "Frugal products are temporary or weak solutions. | F",
+        "Only small companies can do frugal engineering. | F",
+        "Frugal engineering is the same as Jugaad. | F",
+        "Frugal engineering is only about manufacturing. | F"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        "Criteria to be a frugal innovation",
+        "Criterion 1 for frugal innovation is substantial cost reduction.",
+        "Criterion 2 for frugal innovation is concentration on core functionalities.",
+        "core functionality",
+        "Low-cost & affordable design",
+        "Cost-effective with minimal resources",
+        "Reduced complexity",
+        "User-friendly & easy to use",
+        "Portable & lightweight",
+        "Robust & reliable",
+        "High value for money",
+        "Scalable for large deployment",
+        "Sustainable & resource-efficient",
+        "Criterion 3 for optimized performance level.",
+        "Optimizing the basic design or innovation to frugal type. Performance is the fixed constraint while basic design, production, quality and usability are variable constraints.",
+        "Converging iterations of multiple variable constraints in the optimization process for creating a frugal product. Each shrinking oval represents convergence towards optimal value for a given variable"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        "Evaluating the drivers of frugal innovation and its relation to sustainability — A Systematic Literature Review"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        "Global Competition",
+        "Companies face intense competition worldwide.",
+        "Customers have many choices.",
+        "Firms must provide better value at lower cost.",
+        "Frugal innovation helps companies remain competitive.",
+        "Growth of the Middle Class",
+        "Millions of people, especially in emerging economies, are entering the middle-income group.",
+        "These customers want modern products, cannot afford premium prices, expect good quality.",
+        "Natural Resource Scarcity",
+        "Resources such as metals, water, energy, rare earth elements are becoming limited.",
+        "Therefore, products must use less material, less energy, less waste",
+        "Sustainability Expectations",
+        "Governments and society expect industries to reduce carbon emissions, waste, energy consumption",
+        "Frugal innovation naturally supports sustainability because it minimizes resource usage.",
+        "Increased Social Inclusion",
+        "Technology should reach everyone, including rural populations, low-income families, elderly persons with disabilities",
+        "Frugal innovation aims to make products accessible and affordable for all."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        "Triple Bottom Line Expectations",
+        "Modern businesses are evaluated using three dimensions People (Social), Planet (Environmental), Profit (Economic)",
+        "Frugal innovation seeks to balance all three rather than focusing only on profit.",
+        "Price-Sensitive Consumers",
+        "Many customers want good quality, essential functionality, affordable prices. They are unwilling to pay for unnecessary features.",
+        "This is one of the strongest drivers of frugal innovation.",
+        "Health or Security Threats",
+        "Events such as: COVID-19, Natural disasters, Wars, Climate emergencies",
+        "Create demand for Low-cost medical devices, Portable diagnostic systems, Emergency equipment"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        "Example of frugal innovations",
+        "Mitti Cool Refrigerator - National Innovation Foundation-India",
+        "Vscan Handheld Ultrasound Machine",
+        "Tata Nano"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        "Videos of some Innovation",
+        "https://www.youtube.com/watch?v=7wuoZb2SGRE",
+        "https://www.youtube.com/watch?v=hlftZlOWrDQ",
+        "https://www.youtube.com/shorts/YDMwevxaR0Q",
+        "https://www.youtube.com/watch?v=9kwyvcEJqCs"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        "Popular examples",
+        "Not-so-popular examples",
+        "Technology in Society, 2013"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 18,
+      "title": "",
+      "content": [
+        "More Examples",
+        "Example | Why It Looks Frugal | Why It Is NOT Frugal Innovation",
+        "Cheap LED bulbs from unbranded manufacturers | Low purchase price | Often fail within months because lower-quality drivers and LEDs are used instead of improving design.",
+        "Low-cost face masks during COVID-19 | Affordable PPE | Many did not meet filtration standards, reducing cost by sacrificing essential performance.",
+        "Low-cost helmets without ISI certification | Cheap safety gear | Reduced material thickness and poor manufacturing compromise rider safety."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 19,
+      "title": "",
+      "content": [
+        "Some useful stats..",
+        "Major sources of frugal innovations by country",
+        "Frugal innovation cases by sector",
+        "Mapping the frugal innovation phenomenon, Technology in Society, 2017"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 20,
+      "title": "",
+      "content": [
+        "Are Frugal Innovations Disruptive?",
+        "Clayton M. Christensen introduced the concept of Disruptive Innovation",
+        "Disruptive innovation:A product or service that creates a new market or transforms an existing market by providing a simpler, lower-cost, and high-value alternative to conventional solutions.",
+        "Clayton Christensen’s theory of disruptive innovation describes how smaller companies with fewer resources successfully displace established businesses",
+        "Christensen's Disruption | Frugal Innovation",
+        "Starts with simplicity and convenience | Starts with affordability",
+        "Price decreases over time | Low cost from the beginning",
+        "Performance improves later | Quality and performance improve while remaining affordable",
+        "Eventually disrupts mainstream products | Disrupts markets through affordability, quality, and sustainability",
+        "Frugal innovation can be disruptive when it does not only reduce cost; it makes a good-quality product accessible to millions of new users who could not afford the conventional product, thereby changing the market itself."
+      ],
+      "notes": ""
+    }
+  ]
+}

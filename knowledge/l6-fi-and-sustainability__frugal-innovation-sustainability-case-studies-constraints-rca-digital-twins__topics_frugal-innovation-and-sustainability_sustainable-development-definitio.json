@@ -1,0 +1,395 @@
+{
+  "source_file": "L6_FI and sustainability.pptx",
+  "topics": [
+    "frugal innovation and sustainability link",
+    "sustainable development definition",
+    "three pillars of sustainability",
+    "sustainable innovation characteristics",
+    "Northport Klang Green Master Plan",
+    "Mitticool refrigerator",
+    "GE MAC 400 portable ECG",
+    "Tata Nano sustainability drawbacks",
+    "grassroots frugal innovation",
+    "Ksheera Enterprises low-cost milking machines",
+    "Jaipur Foot prosthetic case study",
+    "negative impacts of frugal innovation",
+    "digital twin heritage replicas Croatia",
+    "photogrammetry and low-cost 3D printing PLA",
+    "Constraint-RCA-Frugal Innovation-Sustainability framework"
+  ],
+  "summary": "The deck examines how frugal innovation relates positively and negatively to sustainability, grounding the discussion in sustainable development, the environmental-economic-social pillars of sustainability, and sustainable innovation. It uses multiple case studies—including Tata Nano, Jaipur Foot, Northport Klang, grassroots milking machines, and Croatian digital twin heritage replicas—to show opportunities, trade-offs, and design principles for sustainable frugal innovation. It also introduces a practical framework combining constraints, root cause analysis, frugal engineering, and sustainability evaluation for solving real-world problems in healthcare, education, and agriculture.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Frugal Innovation and sustainability",
+        "Sustainable development is a way of growing and improving our lives today while protecting resources and environment for future generations.",
+        "Using resources wisely today so that future generations can also benefit from them.",
+        "Frugal innovation is often associated with sustainability because it is characterized by minimizing the use of (material and financial) resources",
+        "Is there a positive connection between frugal innovation and sustainability?",
+        "What opportunities for sustainable frugal innovations are described?",
+        "Is there a negative connection between frugal innovation and sustainability?",
+        "What threats for sustainable frugal innovation are described?"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Mitticool Refrigerator",
+        "GE MAC 400 Portable ECG",
+        "Solar Lantern",
+        "Poor market acceptance.",
+        "Low profitability.",
+        "More private cars can increase congestion and emissions.",
+        "Perceived as a \"cheap car,\" affecting customer acceptance.",
+        "Safety concerns reduced consumer trust.",
+        "Tata Nano (Frugal but Less Sustainable)"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Sustainability",
+        "Three Main Pillars of Sustainability",
+        "Environmental Sustainability",
+        "Protecting natural resources",
+        "Reducing pollution and waste",
+        "Economic Sustainability",
+        "Efficient use of resources",
+        "Long-term economic development",
+        "Social Sustainability",
+        "Improving quality of life",
+        "Ensuring equality and social welfare"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "Sustainability and sustainable development",
+        "Development - Building products, industries, cities, or improving people's lives.",
+        "Sustainability - The rules or principles that ensure development does not waste resources or harm future generations.",
+        "Sustainable Development - Development that follows these sustainability principles."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Sustainable Innovation",
+        "Sustainable innovation is the process of creating or updating products, services, and business models to generate long-term environmental and social benefits while maintaining economic profitability.",
+        "Key characteristics of sustainable innovation",
+        "Environmental Responsibility",
+        "Social Impact",
+        "Renewable Energy and Clean Technologies",
+        "Collaboration and Partnerships",
+        "Example of Sustainable Transportation:",
+        "Developing electric vehicles, improving public transportation systems, and promoting alternative fuels and mobility solutions to reduce greenhouse gas emissions and air pollution."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "Case Study: Northport Klang, Malaysia",
+        "Northport is one of Malaysia's major ports. Its activities include loading and unloading cargo, warehousing, Container handling, Ship operations. These activities use heavy equipment and ships, producing a large amount of CO₂ emissions. In 2013, Northport emitted about 40.72 million kg CO₂ per year. To reduce pollution, Northport introduced a Green Master Plan.",
+        "Strategy",
+        "Infrastructure Strategy: Old tractors were replaced with Euro-4 standard tractors.",
+        "Operational Strategy: Ships entering the port must travel slowly.",
+        "Green Building: Inverter air conditioners, LED street lighting.",
+        "Environmental sustainability strategies and impacts"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Sustainable frugal innovation",
+        "Sustainable frugal innovation is the practice of designing highly affordable, accessible, and resource-efficient solutions for underserved markets.",
+        "Pursuing Frugal Innovation for Sustainability at the Grassroots Level"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "Case study: Frugal Innovation for Sustainability at Grassroots Level",
+        "Ksheera Enterprises manufactures low-cost milking machines. 12,000 machines have been sold across India and other countries, including Sweden, New Zealand, Mexico, and Kenya.",
+        "Jayashree sells its machines through a business-to-business model. Machines have been installed in 27 states across India and in seven other countries, generating over 2,100 jobs for women across India in the process"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        "Positive Connection of Frugal Innovation for Sustainability",
+        "Economic Sustainability",
+        "Reduces production cost",
+        "Encourages sustainable economic growth",
+        "Creates cost-saving opportunities",
+        "Improves market competitiveness",
+        "Generates new business opportunities",
+        "Social Sustainability",
+        "Supports underserved populations",
+        "Improves living conditions",
+        "Encourages entrepreneurship",
+        "Promotes inclusiveness and social equity",
+        "Provides affordable access to innovation",
+        "Global Impact",
+        "Helps reduce poverty and hunger",
+        "Addresses global human needs",
+        "Supports sustainable development goals (SDGs)",
+        "Jaipur Foot (India)",
+        "Problem",
+        "Artificial limbs were expensive for poor patients.",
+        "Frugal Solution",
+        "A low-cost prosthetic leg was developed using simple materials and local manufacturing.",
+        "Sustainability Impact",
+        "Affordable healthcare",
+        "Improved mobility",
+        "Low production cost",
+        "Social inclusion"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        "Negative Connection of Frugal Innovation for Sustainability",
+        "Low profit margin",
+        "Easy imitation",
+        "Brand image risk",
+        "Poor quality",
+        "Commercialization difficulties",
+        "Funding constraints",
+        "Uncertain employment",
+        "Does not solve root causes of poverty",
+        "Environmental sustainability is not guaranteed",
+        "Poor recyclability"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        "Can a product be considered a successful Frugal Innovation if it is affordable but causes significant environmental damage? Justify your answer with example.",
+        "Inclusive Innovation",
+        "Gandhian Innovation",
+        "Frugal Innovation",
+        "Grassroots Innovation",
+        "Empathetic Innovation",
+        "BOP Innovation",
+        "Reverse Innovation",
+        "Value Engineering",
+        "Sustainable???"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 13,
+      "title": "",
+      "content": [
+        "Frugal innovation but an unsuccessful Sustainable innovation",
+        "Cheap diesel irrigation pumps: Affordable for farmers but High fuel consumption and air pollution\n\nInexpensive charcoal cookstoves: Low purchase cost and  Continued deforestation and indoor air pollution\n\nSingle-use low-cost medical devices: Affordable healthcare but Generates biomedical waste and environmental burden\n\nDisposable plastic packaging (low-cost FMCG): Reduces product cost but Large amount of non-recyclable plastic waste",
+        "A successful Frugal Innovation should be affordable, functional, accessible, and as environmentally sustainable as possible, not merely low-cost."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 14,
+      "title": "",
+      "content": [
+        "Case study: Digital Twin Heritage Replicas (Croatia)",
+        "Digital twin: A live virtual model of a real physical object, process, or system. It uses real-time data from sensors to match what is happening in the real world.",
+        "Includes monuments, statues, historical buildings, artworks, and famous personalities Represents history and identity of a nation",
+        "Examples: Eiffel Tower, Statue of Liberty, Historical monuments",
+        "Problem: Physical monuments can get damaged, Erode over time",
+        "Solution: Digitize heritage objects using modern technologies",
+        "Sustainable Frugal Innovation in Cultural Heritage for the Production of Decorative Items by Adopting Digital Twin"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 15,
+      "title": "",
+      "content": [
+        "A digital twin is a virtual 3D copy of a real object",
+        "Benefits: Preservation of heritage, Easy sharing, Reproduction of replicas"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 16,
+      "title": "",
+      "content": [
+        "Design principles",
+        "Continuous Process Chain: Every step of product development should be digitally connected. All connected through software without interruptions. Example: A customer asks for a larger statue. Instead of redesigning everything, the digital model updates automatically throughout the manufacturing process.",
+        "Collaboration Across Stakeholders : Different people should work together throughout product development. Many people work together - customer, designer, engineer, manufacturer",
+        "Sustainable Frugal Innovation",
+        "Sustainable Process Definition: Not only the product, but also the manufacturing process should be sustainable. The process should reduce material usage, energy consumption, waste generation.",
+        "Use affordable tools such as cameras, photogrammetry, and low-cost 3D printing (PLA material) to create high-quality products while keeping costs low, minimizing waste, and involving customers throughout the process."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 17,
+      "title": "",
+      "content": [
+        "Proposed Sustainable Frugal Innovation Process",
+        "Step 1: Capture Object",
+        "Physical object",
+        "Photo",
+        "Existing 3D model",
+        "Step 2: Create Digital Twin",
+        "3D scanning",
+        "Photogrammetry",
+        "Step 3: Edit Digital Model",
+        "Scaling",
+        "Surface correction",
+        "CAD processing",
+        "Step 4: Manufacturing",
+        "3D printing",
+        "Casting",
+        "Metal/plaster production"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 18,
+      "title": "",
+      "content": [
+        "Why Frugal Innovation is Important Here",
+        "Frugal innovation is important because the goal is to create cultural heritage replicas at low-cost using limited resources while still maintaining good quality.",
+        "In traditional manufacturing:",
+        "Large monuments or decorative replicas are expensive",
+        "Skilled labor is required",
+        "Specialized machinery is costly",
+        "Production takes more time",
+        "The proposed method reduces these problems using:",
+        "Digital twins",
+        "Affordable 3D technologies",
+        "Low-cost materials",
+        "Simple manufacturing tools"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 19,
+      "title": "",
+      "content": [
+        "Constraint-RCA-FI-Sustainability",
+        "Concept | Main Question | Output",
+        "Constraint | What limits us? | Identify barriers",
+        "RCA | Why does the barrier exist? | Find the root cause",
+        "Frugal Innovation | How can we solve it simply and affordably? | Cost-effective solution",
+        "Sustainability | Will the solution remain economically, socially, and environmentally beneficial? | Long-term impact"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 20,
+      "title": "",
+      "content": [
+        "Study Fishbone diagram and answer the following:",
+        "Identify four major constraints affecting the rural healthcare system.",
+        "What is the root cause behind these constraints?",
+        "Suggest two Frugal Engineering solutions based on the RCA.",
+        "Explain how your solutions contribute to economic sustainability, social sustainability, environmental sustainability"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 21,
+      "title": "",
+      "content": [
+        "1. A company identifies that 80% of the product cost comes from a touchscreen display, while users mostly operate the device using only physical buttons. What is the best engineering decision?",
+        "A. Replace the touchscreen with a smaller touchscreen.",
+        "B. Keep the touchscreen to maintain a premium appearance.",
+        "C. Perform RCA, replace the touchscreen with buttons if functionality is preserved, and evaluate environmental, economic, and social impacts.",
+        "D. Increase the product price.",
+        "2. Which of the following is NOT a constraint?",
+        "A. Limited budget",
+        "B. Poor internet connectivity",
+        "C. High customer demand",
+        "D. Limited electricity supply",
+        "3. Which statement is logically correct?",
+        "A. Every Frugal Engineering solution is Sustainable.",
+        "B. Every Sustainable Engineering solution is Frugal.",
+        "C. Some Frugal Engineering solutions are Sustainable, but not all.",
+        "D. Frugal Engineering and Sustainable Engineering are unrelated."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 22,
+      "title": "",
+      "content": [
+        "4. Which statement is TRUE?",
+        "A. Every Jugaad solution is a Frugal Innovation.",
+        "B. Every Frugal Innovation begins as Jugaad.",
+        "C. A Jugaad solution becomes Frugal Engineering only after engineering validation for safety, reliability, and scalability.",
+        "D. Jugaad and Sustainable Engineering are identical.",
+        "5. Which statement is FALSE?",
+        "A. Grassroots Innovation usually starts from a real local problem.",
+        "B. RCA helps engineers understand the actual cause of the problem.",
+        "C. RCA guarantees that every grassroots innovation becomes commercially successful.",
+        "D. RCA can improve the scalability of grassroots innovations.",
+        "6. A company develops a product only for rural poor communities.",
+        "The PRIMARY innovation philosophy is:",
+        "A. BOP Innovation",
+        "B. Inclusive Innovation",
+        "C. Reverse Innovation",
+        "D. Value Engineering"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 23,
+      "title": "",
+      "content": [
+        "Q. A village school has poor internet connectivity. The government proposes providing every student with a tablet. Without proposing a solution, identify: Engineering Constraints and Root Cause(s).",
+        "Q. Farmers complain that crop yield is decreasing every year. After discussion, the following observations are made:",
+        "Rainfall is irregular.",
+        "Fertilizer prices have increased.",
+        "Irrigation canals are damaged.",
+        "Farmers use old irrigation methods.",
+        "Question:",
+        "Separate the following into: Constraint and Root Cause"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 24,
+      "title": "",
+      "content": [
+        "Practice question: Government wants to deploy a digital healthcare system in 1,000 remote villages. The engineering team has collected the following observations.",
+        "Internet connectivity is unreliable.",
+        "Electricity is available only a few hours per day.",
+        "Most health workers own basic phones.",
+        "Only 25% own smartphones.",
+        "Many workers are not fluent in English.",
+        "Health workers already use WhatsApp for communication.",
+        "The annual maintenance budget is very limited.",
+        "Task",
+        "What are the major engineering constraints?",
+        "Draw a Root Cause Analysis (RCA) diagram.",
+        "Propose a Frugal Engineering strategy.",
+        "Explain how your design would improve sustainability (economic, social, and environmental)."
+      ],
+      "notes": ""
+    }
+  ]
+}

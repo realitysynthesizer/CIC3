@@ -1,0 +1,226 @@
+{
+  "source_file": "L7_Frugal Decision tree.pptx",
+  "topics": [
+    "decision tree algorithm",
+    "flowchart-like if-then classification",
+    "root node and leaf node prediction",
+    "probability and statistics in traditional decision-making",
+    "Gini impurity measure",
+    "blood pressure high-risk low-risk split example",
+    "Fast-and-Frugal Heuristics (FFH)",
+    "fast-and-frugal trees definition and properties",
+    "clinician fast-and-frugal decision trees",
+    "coronary care unit versus regular nursing bed admission",
+    "medical disaster triage with multiple classes",
+    "clinical FFT case study for postoperative ICU admission",
+    "Charlson Comorbidity Score (CCS)",
+    "ASA Physical Status (ASA-PS)",
+    "credit card approval FFT example",
+    "wound infection prediction using temperature redness exudate wound size fluorescence",
+    "student performance best-case accuracy by number of attributes"
+  ],
+  "summary": "The deck introduces decision trees and explains splitting with a blood-pressure classification example using Gini impurity. It then focuses on Fast-and-Frugal Heuristics and fast-and-frugal trees, highlighting their simplicity, transparency, and clinical use in postoperative ICU admission decisions compared with CCS and ASA-PS scoring. Additional examples include credit card approval, wound infection prediction, and a student performance dataset for analyzing best-case accuracy with different numbers of attributes.",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "",
+      "content": [
+        "Decision tree",
+        "A decision tree is a flowchart-like machine learning algorithm.  It breaks down complex datasets into a series of simple \"if-then\" questions, routing data from a root node down to leaf nodes to output a final prediction",
+        "Traditional decision-making is based on Probability and statistics"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 2,
+      "title": "",
+      "content": [
+        "Example",
+        "Patient | BP | Risk",
+        "P1 | 160 | High",
+        "P2 | 150 | High",
+        "P3 | 145 | Low",
+        "P4 | 130 | Low",
+        "P5 | 120 | Low",
+        "P6 | 110 | High",
+        "Classify patients as High Risk or Low Risk based on Blood Pressure.",
+        "Gini measures how mixed the classes are",
+        "Gini=1−∑pi2​ For two classes",
+        "Gini=1−[P(High)2+P(Low)2]",
+        "Split | Gini",
+        "BP ≤ 140 | 0.444",
+        "BP ≤ 150 | 0.333",
+        "BP ≤ 160 | 0.500",
+        "Gini Before Splitting =0.5"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 3,
+      "title": "",
+      "content": [
+        "Fast-and-Frugal Heuristics (FFH)?",
+        "Simple decision-making rules that use only the most important information to make quick and reliable decisions.",
+        "Focus on a few critical cues",
+        "Characteristics of FFH",
+        "Fast",
+        "2. Frugal: Uses only a few important variables, Ignores unnecessary information.",
+        "3. Transparent: Easy to understand, Easy to explain.",
+        "Many Variables",
+        "↓",
+        "Select Important Ones",
+        "↓",
+        "Simple Rule",
+        "↓",
+        "Decision",
+        "Definition. A fast-and-frugal classification tree such that it: (i) always has an exit after it queries an attribute, (ii) has only a few attributes and (iii) queries each attribute once and does not query multiple attributes together.",
+        "Fast-and-frugal decision trees for clinicians, 2026"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 4,
+      "title": "",
+      "content": [
+        "Example: A fast-and-frugal tree for deciding whether to admit a patient to a coronary care unit or a regular nursing bed",
+        "Example: A fast-and-frugal tree for patients in large scale medical disasters",
+        "Features attributes with more than two possible values and the number of possible classes is four."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 5,
+      "title": "",
+      "content": [
+        "Case study: Clinical application of fast-and-frugal trees (FFT): Intensive care",
+        "FFT was developed and evaluated for deciding whether a patient should be admitted to the Intensive Care Unit (ICU) or a general nursing ward after surgery.",
+        "After surgery, doctors must decide General Nursing Ward or Intensive Care Unit (ICU)",
+        "Wrongly sending a high-risk patient to the nursing ward",
+        "Increases the risk of complications or death.",
+        "May delay critical care.",
+        "Wrongly sending a low-risk patient to the ICU",
+        "Increases healthcare costs.",
+        "Occupies ICU beds unnecessarily.",
+        "Hospitals commonly use two approaches:",
+        "(a) Charlson Comorbidity Score (CCS): A regression-based risk score.",
+        "Calculates risk based on age, existing diseases (diabetes, cancer, kidney disease, etc.)",
+        "Produces a numerical risk score.",
+        "(b) ASA Physical Status (ASA-PS)",
+        "Assigned by an anesthesiologist.",
+        "Rates the patient's overall health from 1 to 6."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 6,
+      "title": "",
+      "content": [
+        "A large European study analyzed approximately 47,000 surgical patients across 498 hospitals in 28 countries. 73% of patients who died within one week after surgery had never been admitted to the ICU.",
+        "Proposed Solution: Fast-and-Frugal Tree",
+        "Observe with other ML approaches",
+        "Printed FFT on laminated pocket cards. Provide a quick reference",
+        "They had memorized the decision tree.",
+        "FFT combines objective clinical data already collected in hospitals.",
+        "Structured discussions. Improved communication among physicians.",
+        "Made it easier to explain decisions to patients."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 7,
+      "title": "",
+      "content": [
+        "Real Clinical Example",
+        "Patient: Age = 72 years , High CCS",
+        "According to the FFT: → ICU admission",
+        "However, the doctor did not admit the patient to the ICU.",
+        "ICU was already very busy. Although the FFT recommends ICU admission, the patient could be safely managed in the normal ward because enhanced monitoring was available.",
+        "FFT is not a rigid rule.",
+        "Instead, it serves as a decision support tool.",
+        "Doctors can still use their experience when unusual situations arise."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 8,
+      "title": "",
+      "content": [
+        "Example: A bank wants to decide whether to approve or reject a credit card application.",
+        "Parameter | Value",
+        "Credit Score | 760",
+        "Annual Income | ₹8,50,000",
+        "Age | 32",
+        "Employment | Permanent",
+        "Existing Loan | No",
+        "Previous Default | No",
+        "Debt-to-Income Ratio | 22%",
+        "Savings | ₹3,00,000",
+        "Residence | Own House",
+        "Number of Credit Cards | 2",
+        "More…. | Values….."
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 9,
+      "title": "",
+      "content": [
+        "Abstract representation"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 10,
+      "title": "",
+      "content": [
+        "Abstract representation"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 11,
+      "title": "",
+      "content": [
+        "Patient | Temperature | Redness | Exudate | Wound Size | Fluorescence | Infection (O/P)",
+        "P1 | Normal | Low | Low | Small | Absent | No",
+        "P2 | Normal | High | Low | Small | Absent | No",
+        "P3 | High | High | High | Large | Present | Yes",
+        "P4 | High | High | Low | Large | Present | Yes",
+        "P5 | Normal | Low | Low | Large | Absent | No",
+        "P6 | High | High | High | Small | Present | Yes",
+        "P7 | Normal | High | High | Large | Absent | No",
+        "P8 | High | High | Low | Small | Present | Yes",
+        "P9 | Normal | Low | High | Small | Absent | No",
+        "P10 | High | High | High | Large | Present | Yes",
+        "P11 | Normal | High | Low | Large | Absent | No",
+        "P12 | High | Low | High | Large | Present | Yes",
+        "Q. Predict whether a patient has infection using FFT"
+      ],
+      "notes": ""
+    },
+    {
+      "slide_number": 12,
+      "title": "",
+      "content": [
+        "Student | Attendance | Assignment | Study Hours | Previous Marks | Result (O/P)",
+        "S1 | High | Done | High | High | Pass",
+        "S2 | High | Done | Low | High | Pass",
+        "S3 | High | Not Done | Low | Low | Fail",
+        "S4 | High | Not Done | High | High | Fail",
+        "S5 | Low | Done | High | High | Pass",
+        "S6 | Low | Done | Low | Low | Fail",
+        "S7 | Low | Not Done | Low | Low | Fail",
+        "S8 | Low | Not Done | High | Low | Fail",
+        "S9 | High | Done | Low | Low | Fail",
+        "S10 | Low | Done | High | Low | Fail",
+        "Number of attributes | Best case accuracy",
+        "1 | ",
+        "2 | ",
+        "3 | ",
+        "4 | ",
+        "Q. Find the best-case accuracy level for different attributes"
+      ],
+      "notes": ""
+    }
+  ]
+}
