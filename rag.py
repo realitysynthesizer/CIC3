@@ -99,7 +99,7 @@ def answer_question(client: OpenAI, question: str, system_prompt: dict) -> tuple
         "content": (
             system_prompt["content"]
             + "\n\nAnswer using ONLY the following lecture material. If the material does "
-            "not contain the answer, say so briefly instead of guessing.\n\n"
+            "not contain the answer, only then generate the answer by your self\n\n"
             + context
         ),
     }
